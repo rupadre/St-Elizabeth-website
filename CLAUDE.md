@@ -35,4 +35,3 @@ Read this first in every session. The person you're working with is the parish p
 - Point stelizabethmartyr.org to Render when the site is approved.
 - Events for November and December 2026 were read from the parish calendar PDFs on November 17, 2026.
 - No bulletin posted yet; ask Fr. Arkady for the current bulletin PDF.
-- The December calendar PDF footer says "2901 E Broadway"; the site and November calendar say "28010 East Broadway S". Confirm which is right.
