@@ -33,7 +33,10 @@
       "date": "2026-11-22",
       "title": "Bonfire at Fr. Arkady's",
       "time": "5:00 PM",
-      "text": "An evening of fellowship around the fire. Ask for directions if you need them."
+      "text": "An evening of fellowship around the fire. Ask for directions if you need them.",
+      "image": "event-bonfire",
+      "image_alt": "A small picture of a crackling bonfire",
+      "image_small": true
     },
     {
       "date": "2026-11-26",
@@ -45,13 +48,19 @@
       "date": "2026-11-28",
       "title": "Moleben to St. Elizabeth and church cleaning",
       "time": "11:30 AM",
-      "text": "A short service of prayer to our patron saint, followed by cleaning and caring for our church together."
+      "text": "A short service of prayer to our patron saint, followed by cleaning and caring for our church together.",
+      "image": "event-church-cleaning",
+      "image_alt": "A bucket, mop and dustpan for church cleaning",
+      "image_small": true
     },
     {
       "date": "2026-12-04",
       "title": "Men's pilgrimage to St. Gregory Palamas Monastery",
       "time": "",
-      "text": "A pilgrimage for the men of the parish."
+      "text": "A pilgrimage for the men of the parish.",
+      "image": "event-pilgrimage",
+      "image_alt": "A pilgrim with a staff and travel bag",
+      "image_small": true
     },
     {
       "date": "2026-12-06",
@@ -69,14 +78,20 @@
       "date": "2026-12-19",
       "title": "Moleben and church cleaning",
       "time": "11:00 AM",
-      "text": "Prayer together, then preparing our church for the Nativity of Christ."
+      "text": "Prayer together, then preparing our church for the Nativity of Christ.",
+      "image": "event-church-cleaning",
+      "image_alt": "A bucket, mop and dustpan for church cleaning",
+      "image_small": true
     },
     {
       "date": "2026-12-24",
       "end_date": "2026-12-25",
       "title": "Nativity of Our Lord (Christmas)",
       "time": "Christmas Eve 6:00 PM Vigil; Christmas Day 9:30 AM Divine Liturgy",
-      "text": "The great feast of Christ's birth. A beautiful time to visit an Orthodox church for the first time."
+      "text": "The great feast of Christ's birth. A beautiful time to visit an Orthodox church for the first time.",
+      "image": "event-nativity-icon",
+      "image_alt": "Icon of the Nativity: the Mother of God and St. Joseph beside the Christ Child in the manger",
+      "image_small": true
     },
     {
       "date": "2026-12-26",
@@ -88,7 +103,10 @@
       "date": "2026-12-27",
       "title": "Nativity concert and potluck",
       "time": "After the 9:30 AM Divine Liturgy",
-      "text": "Christmas music and a shared potluck meal on the Sunday after the Nativity. Everyone is welcome."
+      "text": "Christmas music and a shared potluck meal on the Sunday after the Nativity. Everyone is welcome.",
+      "image": "event-potluck",
+      "image_alt": "A red pot labeled Pot Luck",
+      "image_small": true
     },
     {
       "date": "2027-01-01",
