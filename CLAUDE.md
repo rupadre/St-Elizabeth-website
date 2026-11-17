@@ -27,7 +27,7 @@ Read this first in every session. The person you're working with is the parish p
 - Monthly calendar: add the PDF to static/calendar/ and a line to content/calendar.json ("YYYY-MM": "/static/calendar/file.pdf"). The site names this month and next month automatically.
 - Livestream goes public: set "livestream_public": true in content/site.json.
 - Service times: content/schedule.json. Ministries: content/ministries.json.
-- Events come from the monthly calendar: when Fr. Arkady sends a new month's calendar PDF, read it and add each feast, special service and parish event (not the regular weekly services) to content/events.json (date YYYY-MM-DD, optional end_date, title, time, text, optional photo). Copy times exactly from the calendar; never invent them. Events move from "Coming up" to "Past events" by themselves after their date; the homepage shows the next four.
+- Events come from the monthly calendar: when Fr. Arkady sends a new month's calendar PDF, read it and add each feast, special service and parish event (not the regular weekly services) to content/events.json (date YYYY-MM-DD, optional end_date, title, time, text, optional photo). Copy times exactly from the calendar; never invent them. Events move from "Coming up" to "Past events" by themselves after their date; the homepage shows the next four. If the calendar shows a little picture next to an event (clip art or an icon), cut it out of the PDF, save it in static/img/ as event-<name>.jpg on a white background, and set image, image_alt and "image_small": true on that event.
 - Bulletin: put the PDF in static/bulletin/ and set url and label (e.g. "Sunday, November 22") in content/bulletin.json. Empty url shows "Coming soon".
 
 ## Open items (as of November 17, 2026)
