@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+public/
+staticfiles/
+preview/
+.DS_Store

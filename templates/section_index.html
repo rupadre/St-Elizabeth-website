@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}{{ page.title }} | {{ site.short_name }}{% endblock %}
+{% block description %}{{ page.summary }}{% endblock %}
+{% block content %}
+<div class="wrap">
+  <header class="page-head">
+    <h1>{{ page.title }}</h1>
+    <p class="lead">{{ page.summary }}</p>
+  </header>
+  <div class="layout single">
+    <div>
+      {% if page.html %}<div class="prose">{{ page.html|safe }}</div>{% endif %}
+      <ul class="index-list">
+        {% for p in children %}<li><a href="{{ section_url }}{{ p.slug }}/"><span class="t">{{ p.title }}</span><span class="s">{{ p.summary }}</span></a></li>
+        {% endfor %}
+        {% if section == "new" %}
+        <li><a href="/orthodoxy-101/"><span class="t">Orthodoxy 101</span><span class="s">Short, plain answers to the questions visitors ask most.</span></a></li>
+        <li><a href="/orthodoxy-101/becoming-orthodox/"><span class="t">Becoming Orthodox</span><span class="s">How the journey into the Church works, step by step.</span></a></li>
+        <li><a href="/glossary/"><span class="t">Glossary</span><span class="s">Plain meanings for words you'll hear at church.</span></a></li>
+        {% endif %}
+      </ul>
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,7 @@
+<ul class="cal-links" data-calendar>
+  {% for m in calendar_months %}<li>
+    {% if m.url %}<a class="cal-link" href="{{ m.url }}" data-cal-slot><svg aria-hidden="true" viewBox="0 0 24 24" class="cal-icon"><path fill="currentColor" d="M7 2h2v2h6V2h2v2h3a1 1 0 0 1 1 1v15a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h3zm12 8H5v9h14zM5 8h14V6H5z"/></svg><span><span class="cal-month">{{ m.label }}</span><span class="cal-sub">Parish calendar (PDF)</span></span></a>
+    {% else %}<span class="cal-link is-missing" data-cal-slot><svg aria-hidden="true" viewBox="0 0 24 24" class="cal-icon"><path fill="currentColor" d="M7 2h2v2h6V2h2v2h3a1 1 0 0 1 1 1v15a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h3zm12 8H5v9h14zM5 8h14V6H5z"/></svg><span><span class="cal-month">{{ m.label }}</span><span class="cal-sub">Calendar coming soon</span></span></span>{% endif %}
+  </li>{% endfor %}
+</ul>
+<script type="application/json" id="calendar-data">{{ calendar_json|safe }}</script>

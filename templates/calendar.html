@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}Parish calendar | {{ site.short_name }}{% endblock %}
+{% block content %}
+<div class="wrap">
+  <header class="page-head">
+    <h1>Parish calendar</h1>
+    <p class="lead">Every service, feast and parish event, month by month.</p>
+  </header>
+  <div class="layout single">
+    <div>
+      {% include "_calendar.html" %}
+      <div class="prose" style="margin-top:2rem">
+        <p>Feast days add services to our regular schedule, and times sometimes change. Please check the calendar before you come, or call or text Fr. Arkady at <a href="{{ site.phone_link }}">{{ site.phone }}</a>.</p>
+        <p>Our regular weekly services are listed on the <a href="/worship/">Worship</a> page.</p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

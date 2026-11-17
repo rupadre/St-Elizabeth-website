@@ -1,0 +1,12 @@
+# Render Blueprint: builds the Django site into plain HTML and hosts it for free.
+services:
+  - type: web
+    runtime: static
+    name: st-elizabeth-website
+    buildCommand: pip install -r requirements.txt && python manage.py distill-local public --force --collectstatic
+    staticPublishPath: public
+    envVars:
+      - key: DJANGO_DEBUG
+        value: "0"
+      - key: PYTHON_VERSION
+        value: "3.12.7"

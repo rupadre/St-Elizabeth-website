@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Our history | {{ site.short_name }}{% endblock %}
+{% block description %}From St. George Parish, founded in East Toledo in 1936, to St. Elizabeth the New Martyr in Walbridge.{% endblock %}
+{% block content %}
+<div class="wrap">
+  <header class="page-head">
+    <p class="crumb"><a href="/about/">About us</a></p>
+    <h1>Our history</h1>
+    <p class="lead">From a Bulgarian and Macedonian immigrant parish in East Toledo to St. Elizabeth the New Martyr in Walbridge: nearly ninety years of one community.</p>
+  </header>
+  <div class="layout single">
+    <div class="history">{{ history_html|safe }}</div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,119 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <h1>Come and see.</h1>
+      <p class="hero-verse">John 1:46</p>
+      <p class="lead">St. Elizabeth the New Martyr is an Orthodox Christian church in Walbridge, near Toledo. We worship as Christians have for two thousand years, our services are in English, and everyone is welcome.</p>
+      <div class="actions">
+        <a class="button" href="/new/first-visit/">Plan your first visit</a>
+        <a class="button quiet" href="/worship/">Service times</a>
+      </div>
+    </div>
+    <figure class="hero-photo">
+      <div class="arch arch-frame"><img class="arch" src="{{ static }}img/pascha-procession.jpg" alt="Parishioners holding candles outside the church doors at night, singing at the Paschal procession" width="960" height="720"></div>
+      <figcaption class="caption">The midnight procession at Pascha, our first Easter in Walbridge, 2024.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="board-band" aria-labelledby="sunday">
+  <div class="wrap board">
+    <div>
+      <h2 id="sunday">This Sunday</h2>
+      <ul class="times">
+        {% for day in schedule.days %}{% if day.day == "Sunday" %}{% for item in day.services %}
+        <li><span class="t">{{ item.time }}</span><span class="n">{{ item.name }}<span class="d">{{ item.detail }}</span></span></li>
+        {% endfor %}{% endif %}{% endfor %}
+      </ul>
+      <p class="muted">Great Vespers on Saturday at 4:00 PM is a quieter first service. <a href="/worship/">All service times</a></p>
+      <h2 class="board-sub">Parish calendar</h2>
+      {% include "_calendar.html" %}
+    </div>
+    <div>
+      <h2>Find us</h2>
+      <address class="address">{{ site.address_line }}<br>{{ site.city_line }}</address>
+      <p class="muted">{{ schedule.parking }}</p>
+      <div class="actions">
+        <a class="button" href="{{ site.maps_link }}">Get directions</a>
+        <a class="button quiet" href="{{ site.phone_link }}">Call {{ site.phone }}</a>
+      </div>
+      <h2 class="board-sub">Support our parish</h2>
+      <p class="muted">Your gifts care for our 1883 church and help us welcome newcomers.</p>
+      <a class="button" href="{{ site.giving_link }}">Give online</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="intro">
+      <h2>Wherever you're coming from</h2>
+      <p>Many of us found the Orthodox Church as adults. These short pages are written for you.</p>
+    </div>
+    <ul class="paths">
+      {% for p in paths %}
+      <li>
+        <h3><a href="/new/{{ p.slug }}/">{{ p.title }}</a></h3>
+        <p>{{ p.card }}</p>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="section white">
+  <div class="wrap">
+    <div class="intro">
+      <h2>Questions people ask first</h2>
+      <p>Plain answers, two minutes each, in <a href="/orthodoxy-101/">Orthodoxy 101</a>.</p>
+    </div>
+    <ul class="questions">
+      {% for q in questions %}<li><a href="/orthodoxy-101/{{ q.slug }}/">{{ q.title }}</a></li>
+      {% endfor %}<li><a href="/orthodoxy-101/">All questions</a></li>
+    </ul>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap split">
+    <img src="{{ static }}img/church-exterior.jpg" alt="St. Elizabeth the New Martyr Orthodox Church, a red-brick church with a white tower and pointed stained-glass windows" width="1600" height="1104">
+    <div>
+      <h2>A young mission with a long memory</h2>
+      <p>Our church building has stood in Walbridge since 1883. Our community is older still in its own way.</p>
+      <ul class="years">
+        <li><b>1936</b><span>Bulgarian and Macedonian immigrants found St. George Parish in East Toledo.</span></li>
+        <li><b>2003</b><span>St. George Cathedral is consecrated in Rossford.</span></li>
+        <li><b>2024</b><span>The parish, now St. Elizabeth the New Martyr, celebrates its first Liturgy in Walbridge on Palm Sunday.</span></li>
+      </ul>
+      <a class="button quiet" href="/about/history/">Read our history</a>
+    </div>
+  </div>
+</section>
+
+<section class="section white">
+  <div class="wrap">
+    <div class="intro">
+      <h2>More than Sunday morning</h2>
+      <p>Bible study, prayer, shared meals and a parish family that gathers through the year.</p>
+      <p><a href="/ministries/">See our ministries</a></p>
+    </div>
+    <div class="gallery">
+      <img src="{{ static }}img/paschal-meal.jpg" alt="The parish sharing a festive meal together in a large hall after Pascha" width="960" height="720">
+      <img src="{{ static }}img/parish-grill.jpg" alt="Parishioners grilling outdoors at a parish gathering" width="960" height="720">
+      <img src="{{ static }}img/iconostasis-liturgy.jpg" alt="Clergy serving the Divine Liturgy before the carved wooden iconostasis" width="960" height="730">
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap stream">
+    <div>
+      <h2>Can't be with us in person?</h2>
+      {% if site.livestream_public %}<p>Watch our services live on YouTube.</p>{% else %}<p>Livestreams of our services are coming soon.</p>{% endif %}
+    </div>
+    {% if site.livestream_public %}<a class="button" href="{{ site.youtube_live }}">Watch live</a>{% else %}<span class="pill">Livestream coming soon</span>{% endif %}
+  </div>
+</section>
+{% endblock %}

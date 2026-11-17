@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}Contact and directions | {{ site.short_name }}{% endblock %}
+{% block content %}
+<div class="wrap">
+  <header class="page-head">
+    <h1>{{ page.title }}</h1>
+    <p class="lead">{{ page.summary }}</p>
+  </header>
+  <div class="contact-grid">
+    <div>
+      <h2>Talk with Fr. Arkady</h2>
+      <p>Call or text <a href="{{ site.phone_link }}">{{ site.phone }}</a>. Questions about visiting, the faith, baptisms, weddings, confession or anything else are always welcome.</p>
+      <div class="actions" style="margin-bottom:2.5rem">
+        <a class="button" href="{{ site.phone_link }}">Call</a>
+        <a class="button quiet" href="{{ site.sms_link }}">Send a text</a>
+      </div>
+      <h2>Address</h2>
+      <address class="address">{{ site.address_line }}<br>{{ site.city_line }}</address>
+      <p><a href="{{ site.maps_link }}">Open in Google Maps</a></p>
+      <h2>Parking</h2>
+      <p>{{ schedule.parking }}</p>
+      <h2>Sunday</h2>
+      <p>Divine Liturgy at {{ schedule.sunday_first }}. See <a href="/worship/">all service times</a>.</p>
+    </div>
+    <figure><img src="{{ static }}img/{{ page.image }}.jpg" alt="{{ page.image_alt }}"><figcaption class="caption">Our church on East Broadway in Walbridge's Moline neighborhood.</figcaption></figure>
+  </div>
+</div>
+{% endblock %}

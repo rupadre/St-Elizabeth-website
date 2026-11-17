@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}Ministries | {{ site.short_name }}{% endblock %}
+{% block content %}
+<div class="wrap">
+  <header class="page-head">
+    <h1>{{ page.title }}</h1>
+    <p class="lead">{{ page.summary }}</p>
+  </header>
+  <div class="layout single">
+    <div>
+      {% if ministries.note %}<p class="note">{{ ministries.note }}</p>{% endif %}
+      {% for m in ministries.entries %}
+      <section class="ministry">
+        <h2>{{ m.name }}</h2>
+        <p class="when">{{ m.when }}</p>
+        <p>{{ m.text }}</p>
+      </section>
+      {% endfor %}
+      <figure class="page-photo" style="margin-top:2.5rem"><img src="{{ static }}img/{{ page.image }}.jpg" alt="{{ page.image_alt }}"></figure>
+    </div>
+  </div>
+</div>
+{% endblock %}

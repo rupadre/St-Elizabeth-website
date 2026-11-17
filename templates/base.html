@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}{{ site.name }}{% endblock %}</title>
+<meta name="description" content="{% block description %}An Orthodox Christian church in Walbridge, Ohio, near Toledo. Services in English. Everyone is welcome.{% endblock %}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ static }}css/site.css">
+<script src="{{ static }}js/calendar.js" defer></script>
+<link rel="icon" href="{{ static }}img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="{{ static }}img/logo-st-elizabeth.png">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/">
+      <img class="brand-mark" src="{{ static }}img/logo-st-elizabeth.png" alt="" width="96" height="118">
+      <span><span class="brand-name">{{ site.short_name }}</span><span class="brand-place">Orthodox Church in Walbridge, Ohio</span></span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      {% for item in nav %}<a href="{{ item.url }}"{% if section == item.key %} aria-current="page"{% endif %}>{{ item.label }}</a>
+      {% endfor %}<a class="button quiet give" href="{{ site.giving_link }}">Give</a>
+      <a class="button" href="/new/first-visit/">Plan your visit</a>
+    </nav>
+    <a class="button quiet give mobile-only" href="{{ site.giving_link }}">Give</a>
+    <details class="menu">
+      <summary>Menu</summary>
+      <nav class="menu-panel" aria-label="Main">
+        {% for item in nav %}<a href="{{ item.url }}">{{ item.label }}</a>
+        {% endfor %}<a href="/contact/">Contact</a>
+        <a href="/give/">Give online</a>
+        <a class="button" href="/new/first-visit/">Plan your visit</a>
+      </nav>
+    </details>
+  </div>
+</header>
+<main id="main">
+{% block content %}{% endblock %}
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h2>{{ site.short_name }}</h2>
+        <address style="font-style:normal">{{ site.address_line }}<br>{{ site.city_line }}</address>
+        <p><a href="{{ site.phone_link }}">{{ site.phone }}</a> (call or text Fr. Arkady)</p>
+        <p>Sunday Divine Liturgy at {{ schedule.sunday_first }}</p>
+      </div>
+      <div>
+        <h2>Visit</h2>
+        <ul>
+          <li><a href="/new/first-visit/">Your first visit</a></li>
+          <li><a href="/worship/">Service times</a></li>
+          <li><a href="/calendar/">Parish calendar</a></li>
+          <li><a href="/contact/">Contact and directions</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Parish</h2>
+        <ul>
+          <li><a href="/about/">About us</a></li>
+          <li><a href="/about/history/">Our history</a></li>
+          <li><a href="/ministries/">Ministries</a></li>
+          <li><a href="{{ site.giving_link }}">Give online</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-base">A parish of the <a href="{{ site.diocese_link }}">{{ site.diocese }}</a>, under {{ site.bishop }}. <a href="{{ site.oca_link }}">Orthodox Church in America</a>.</p>
+  </div>
+</footer>
+</body>
+</html>

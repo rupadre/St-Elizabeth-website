@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block title %}Worship and service times | {{ site.short_name }}{% endblock %}
+{% block content %}
+<div class="wrap">
+  <header class="page-head">
+    <h1>{{ page.title }}</h1>
+    <p class="lead">{{ page.summary }}</p>
+  </header>
+  <div class="layout single">
+    <div>
+      <h2 style="margin-top:0">Service times</h2>
+      <p>{{ schedule.note }}</p>
+      <div class="schedule">
+        {% for day in schedule.days %}
+        <div class="day">
+          <h3>{{ day.day }}</h3>
+          <div>{% for item in day.services %}<p class="item"><span class="time">{{ item.time }}</span>{{ item.name }}<span class="d">{{ item.detail }}</span></p>{% endfor %}</div>
+        </div>
+        {% endfor %}
+      </div>
+      <h2>Parish calendar</h2>
+      <p>Feast days add services. Check this month's calendar before you come.</p>
+      {% include "_calendar.html" %}
+      <h2>Watch online</h2>
+      {% if site.livestream_public %}
+      <p>Our services are streamed live on YouTube.</p>
+      <p><a class="button" href="{{ site.youtube_live }}">Watch live on YouTube</a></p>
+      {% else %}
+      <p><span class="pill">Livestream coming soon</span></p>
+      <p>We'll stream our services on YouTube shortly. Until then, the best way to experience Orthodox worship is to come in person.</p>
+      {% endif %}
+      <div class="prose" style="margin-top:2.5rem">{{ page.html|safe }}</div>
+      <figure class="page-photo" style="margin-top:2rem"><img src="{{ static }}img/{{ page.image }}.jpg" alt="{{ page.image_alt }}"></figure>
+    </div>
+  </div>
+</div>
+{% endblock %}

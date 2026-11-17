@@ -1,0 +1,52 @@
+{
+  "note": "Our regular weekly services. Feast days add services; see the monthly calendar.",
+  "days": [
+    {
+      "day": "Sunday",
+      "services": [
+        {
+          "time": "9:10 AM",
+          "name": "Hours",
+          "detail": "Short morning prayers before the Liturgy"
+        },
+        {
+          "time": "9:30 AM",
+          "name": "Divine Liturgy",
+          "detail": "Our main service, about 90 minutes. Coffee hour follows."
+        }
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "services": [
+        {
+          "time": "6:00 PM",
+          "name": "Vespers, Bible Study and the Jesus Prayer",
+          "detail": "Evening prayer, then study and quiet prayer together"
+        }
+      ]
+    },
+    {
+      "day": "Thursday",
+      "services": [
+        {
+          "time": "6:30 PM",
+          "name": "Catechumens Class (Zoom)",
+          "detail": "For those preparing to become Orthodox. Ask Fr. Arkady for the link."
+        }
+      ]
+    },
+    {
+      "day": "Saturday",
+      "services": [
+        {
+          "time": "4:00 PM",
+          "name": "Great Vespers",
+          "detail": "Evening prayer that begins Sunday. A gentle first service for visitors."
+        }
+      ]
+    }
+  ],
+  "sunday_first": "9:30 AM",
+  "parking": "Visitors and anyone who needs a close space can park in our lot. On Sunday mornings, members who are able park at the Glass City Boardwalk Event Center down the street to leave room for you."
+}
