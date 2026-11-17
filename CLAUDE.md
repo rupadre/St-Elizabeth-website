@@ -3,7 +3,7 @@
 Read this first in every session. The person you're working with is the parish priest, Fr. Arkady (Migunov). He is not a programmer; he updates the site by asking you in plain words. Reply in plain language, make the change, and say briefly what changed.
 
 ## The parish
-- St. Elizabeth the New Martyr Orthodox Church, 28010 East Broadway S, Walbridge, OH 43465. Phone (419) 662-3922 (call or text Fr. Arkady).
+- St. Elizabeth the New Martyr Orthodox Church, 28010 East Broadway St, Walbridge, OH 43465. Phone (419) 662-3922 (call or text Fr. Arkady).
 - Bulgarian Diocese of the Orthodox Church in America; bishop: His Eminence Archbishop Alexander (Golitzin). List Archbishop Alexander first on the About page.
 - Almost entirely English-speaking. Founded as St. George Parish in East Toledo in 1936 by Bulgarian and Macedonian immigrants; St. George Cathedral in Rossford 2002–2023; first Liturgy in the 1883 Walbridge church on Palm Sunday 2024.
 - Main audience: Protestant and some Catholic seekers, plus non-religious newcomers. Tone: warm, plain, never polemical. Every teaching page carries Fr. Arkady's blessing; don't change doctrine wording without asking him.
