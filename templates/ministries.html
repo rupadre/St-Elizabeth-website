@@ -6,18 +6,48 @@
     <h1>{{ page.title }}</h1>
     <p class="lead">{{ page.summary }}</p>
   </header>
-  <div class="layout single">
-    <div>
-      {% if ministries.note %}<p class="note">{{ ministries.note }}</p>{% endif %}
-      {% for m in ministries.entries %}
-      <section class="ministry">
-        <h2>{{ m.name }}</h2>
-        <p class="when">{{ m.when }}</p>
-        <p>{{ m.text }}</p>
-      </section>
-      {% endfor %}
-      <figure class="page-photo" style="margin-top:2.5rem"><img src="{{ static }}img/{{ page.image }}.jpg" alt="{{ page.image_alt }}"></figure>
+
+  <section class="ministry-map" aria-labelledby="map-title">
+    <h2 id="map-title">Our parish ministries</h2>
+    <p class="map-hint">One parish family, many ways to serve. Choose a ministry to read more.</p>
+    <div class="map">
+      <svg class="map-lines" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+        {% for m in ministries.parish %}<line x1="50" y1="50" x2="{{ m.x }}" y2="{{ m.y }}"></line>{% endfor %}
+      </svg>
+      <div class="map-center"><span>St. Elizabeth<br>the New Martyr</span></div>
+      <ul class="map-list">
+        {% for m in ministries.parish %}<li style="grid-area: {{ m.area }}"><a href="#{{ m.slug }}">{{ m.short }}</a></li>
+        {% endfor %}
+      </ul>
     </div>
+  </section>
+
+  <p class="note">{{ ministries.how_to_join }} <a href="{{ site.phone_link }}">{{ site.phone }}</a></p>
+
+  <div class="ministry-cards">
+    {% for m in ministries.parish %}
+    <section class="ministry-card" id="{{ m.slug }}">
+      {% if m.image %}<img src="{{ static }}img/{{ m.image }}.jpg" alt="{{ m.image_alt }}" width="1000" height="750" loading="lazy">{% else %}<div class="ministry-card-blank" aria-hidden="true"><img src="{{ static }}img/logo-st-elizabeth.png" alt="" width="96" height="118"></div>{% endif %}
+      <div class="ministry-card-body">
+        <h3>{{ m.name }}</h3>
+        <p>{{ m.text }}</p>
+        <p class="leader"><span>Leader:</span> {{ m.leader }}</p>
+        <p class="to-map"><a href="#map-title">Back to all ministries</a></p>
+      </div>
+    </section>
+    {% endfor %}
   </div>
+
+  <section class="gatherings" aria-labelledby="gatherings-title">
+    <h2 id="gatherings-title">Weekly gatherings</h2>
+    {% for m in ministries.entries %}
+    <section class="ministry">
+      <h3>{{ m.name }}</h3>
+      <p class="when">{{ m.when }}</p>
+      <p>{{ m.text }}</p>
+    </section>
+    {% endfor %}
+  </section>
+  <figure class="page-photo" style="margin-top:2.5rem"><img src="{{ static }}img/{{ page.image }}.jpg" alt="{{ page.image_alt }}"></figure>
 </div>
 {% endblock %}

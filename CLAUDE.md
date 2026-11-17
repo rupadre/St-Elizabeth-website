@@ -33,7 +33,7 @@ Read this first in every session. The person you're working with is the parish p
 ## Open items (as of November 17, 2026)
 - Calendar PDFs still link to the old Squarespace site; move November/December PDFs into static/calendar/ before Squarespace is cancelled.
 - Fr. Arkady's title: the old site says Igumen (2021), the history file says Archimandrite. The site currently says "Fr. Arkady (Migunov)".
-- Ministries: Fr. Arkady will send the full list (12+); current descriptions of Theotokos Tea and Church School are placeholders.
+- Ministries: the 12 parish ministries (from the Sunday of Ministries slides) are in content/ministries.json under "parish", shown as a diagram linked to cards. Descriptions were written by Claude for Fr. Arkady to review. Leaders' personal phone numbers and emails are in the slides but NOT on the site; ask before adding them. Charity and Youth have no photo yet (the charity picture in the folder was a watermarked stock photo; youth photos show children). Weekly gatherings (Theotokos Tea, Church School descriptions still placeholders) are under "entries".
 - Photo permissions pending: children's photos, the baptism photo, the St. George Cathedral exterior (DSC_0005), and the full-length St. Elizabeth icon (13340-elizavetaJPG_2000.jpg, may be from an icon shop). These are kept out of static/img/ except the icon, which is in use pending confirmation.
 - Homepage Pascha photo is only 960px wide; ask for the original if available.
 - Point stelizabethmartyr.org to Render when the site is approved.

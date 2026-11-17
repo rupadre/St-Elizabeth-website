@@ -1,5 +1,147 @@
 {
-  "note": "Fr. Arkady will add the full list of our ministries soon. Here are a few ways to get involved today.",
+  "how_to_join": "To join any ministry, talk with its leader after the Divine Liturgy, or call or text Fr. Arkady.",
+  "parish": [
+    {
+      "slug": "choir",
+      "short": "Choir",
+      "name": "Choir",
+      "leader": "Sarah Allen",
+      "text": "The choir leads the singing of our services. Almost all of Orthodox worship is sung, and new voices are always welcome.",
+      "area": "1 / 1",
+      "x": 12.5,
+      "y": 12.5,
+      "image": "ministry-choir",
+      "image_alt": "The parish choir singing at music stands in the church"
+    },
+    {
+      "slug": "kitchen",
+      "short": "Kitchen / Fellowship",
+      "name": "Kitchen and Fellowship",
+      "leader": "Carol Yonov",
+      "text": "Prepares coffee hour and parish meals, from Sunday mornings to feast-day potlucks, so that everyone has a place at the table.",
+      "area": "1 / 2",
+      "x": 37.5,
+      "y": 12.5,
+      "image": "ministry-kitchen",
+      "image_alt": "A parishioner smiling beside a long table of food in the parish hall"
+    },
+    {
+      "slug": "bookstore",
+      "short": "Bookstore",
+      "name": "Bookstore",
+      "leader": "Mary Gresko (assistant: Randy Carris)",
+      "text": "Our small bookstore offers books, icons and cards to help you learn and pray at home.",
+      "area": "1 / 3",
+      "x": 62.5,
+      "y": 12.5,
+      "image": "ministry-bookstore",
+      "image_alt": "Shelves of books and icons in the parish bookstore"
+    },
+    {
+      "slug": "stewardship",
+      "short": "Stewardship",
+      "name": "Stewardship",
+      "leader": "Alexa Ramm",
+      "text": "Helps the parish care for all that God has given us, through yearly pledges and the gifts that keep our church open.",
+      "area": "1 / 4",
+      "x": 87.5,
+      "y": 12.5,
+      "image": "ministry-stewardship",
+      "image_alt": "Candles, pledge cards and booklets on a table in the church entrance"
+    },
+    {
+      "slug": "digital",
+      "short": "Digital Content / Website / Photos and Videos",
+      "name": "Digital Content, Website, Photos and Videos",
+      "leader": "Jim Allen",
+      "text": "Keeps our website, announcements, photos and videos up to date, so parishioners and visitors know what is happening.",
+      "area": "2 / 1",
+      "x": 12.5,
+      "y": 37.5,
+      "image": "ministry-digital",
+      "image_alt": "A parish announcement listing the Holy Week services"
+    },
+    {
+      "slug": "building",
+      "short": "Building Maintenance",
+      "name": "Building and Maintenance",
+      "leader": "Jacob Miller",
+      "text": "Cares for our 1883 church building: repairs, improvement projects and clearing the snow in winter.",
+      "area": "2 / 4",
+      "x": 87.5,
+      "y": 37.5,
+      "image": "ministry-building",
+      "image_alt": "A parishioner clearing snow outside the church with a snow shovel"
+    },
+    {
+      "slug": "charity",
+      "short": "Charity, Outreach",
+      "name": "Charity and Outreach",
+      "leader": "Cindy Hopper",
+      "text": "Following St. Elizabeth's example of mercy, we collect and give help to neighbors in need.",
+      "area": "3 / 1",
+      "x": 12.5,
+      "y": 62.5
+    },
+    {
+      "slug": "greeters",
+      "short": "Greeters / Hospitality",
+      "name": "Greeters and Hospitality",
+      "leader": "Simon Shafer",
+      "text": "Welcomes visitors at the door, helps them follow the service and makes sure no one stands alone at coffee hour.",
+      "area": "3 / 4",
+      "x": 87.5,
+      "y": 62.5,
+      "image": "ministry-greeters",
+      "image_alt": "Three parishioners smiling together at a table in the parish hall"
+    },
+    {
+      "slug": "panorthodox",
+      "short": "Pan-Orthodox & Social Media",
+      "name": "Pan-Orthodox and Social Media",
+      "leader": "Laura Barton",
+      "text": "Connects us with other Orthodox parishes nearby and shares the life of our parish on social media.",
+      "area": "4 / 1",
+      "x": 12.5,
+      "y": 87.5,
+      "image": "ministry-panorthodox",
+      "image_alt": "Clergy from several parishes in green vestments serving together outdoors"
+    },
+    {
+      "slug": "youth",
+      "short": "Youth Ministry",
+      "name": "Youth Ministry",
+      "leader": "Cindy Hopper",
+      "text": "Learning, activities and friendship for the children and teens of the parish.",
+      "area": "4 / 2",
+      "x": 37.5,
+      "y": 87.5
+    },
+    {
+      "slug": "landscaping",
+      "short": "Landscaping & Decor",
+      "name": "Landscaping and Church Decoration",
+      "leader": "Angela Bricker",
+      "text": "Plants and tends our flower beds, and decorates the church with flowers and greenery for the feasts.",
+      "area": "4 / 3",
+      "x": 62.5,
+      "y": 87.5,
+      "image": "ministry-landscaping",
+      "image_alt": "Parishioners making garlands of evergreen branches to decorate the church"
+    },
+    {
+      "slug": "young-adults",
+      "short": "Young Adults & Catechumens",
+      "name": "Young Adults and Catechumens",
+      "leader": "Seth Ramm",
+      "text": "A place for young adults and for those learning the Orthodox faith to meet, ask questions and grow in friendship.",
+      "area": "4 / 4",
+      "x": 87.5,
+      "y": 87.5,
+      "image": "ministry-young-adults",
+      "image_alt": "Young adults talking around a table in the parish hall"
+    }
+  ],
   "entries": [
     {
       "name": "Wednesday Bible Study and the Jesus Prayer",
