@@ -7,7 +7,7 @@
       <p class="hero-verse">John 1:46</p>
       <p class="lead">St. Elizabeth the New Martyr is an Orthodox Christian church in Walbridge, near Toledo. We worship as Christians have for two thousand years, our services are in English, and everyone is welcome.</p>
       <div class="actions">
-        <a class="button" href="/new/first-visit/">Plan your first visit</a>
+        <a class="button" href="/new/first-visit/">Plan your visit</a>
         <a class="button quiet" href="/worship/">Service times</a>
       </div>
     </div>
@@ -71,8 +71,9 @@
     </div>
     <ul class="questions">
       {% for q in questions %}<li><a href="/orthodoxy-101/{{ q.slug }}/">{{ q.title }}</a></li>
-      {% endfor %}<li><a href="/orthodoxy-101/">All questions</a></li>
+      {% endfor %}
     </ul>
+    <p class="more"><a class="button quiet" href="/orthodoxy-101/">See all 14 questions</a></p>
   </div>
 </section>
 
@@ -97,23 +98,25 @@
     <div class="intro">
       <h2>More than Sunday morning</h2>
       <p>Bible study, prayer, shared meals and a parish family that gathers through the year.</p>
-      <p><a href="/ministries/">See our ministries</a></p>
     </div>
     <div class="gallery">
       <img src="{{ static }}img/paschal-meal.jpg" alt="The parish sharing a festive meal together in a large hall after Pascha" width="960" height="720">
       <img src="{{ static }}img/parish-grill.jpg" alt="Parishioners grilling outdoors at a parish gathering" width="960" height="720">
-      <img src="{{ static }}img/iconostasis-liturgy.jpg" alt="Clergy serving the Divine Liturgy before the carved wooden iconostasis" width="960" height="730">
+      <img src="{{ static }}img/parish-picnic.jpg" alt="Parishioners at a summer picnic under a park pavilion" width="960" height="720">
     </div>
+    <p class="more"><a class="button quiet" href="/ministries/">See our ministries</a></p>
   </div>
 </section>
 
+{% if site.livestream_public %}
 <section class="section">
   <div class="wrap stream">
     <div>
       <h2>Can't be with us in person?</h2>
-      {% if site.livestream_public %}<p>Watch our services live on YouTube.</p>{% else %}<p>Livestreams of our services are coming soon.</p>{% endif %}
+      <p>Watch our services live on YouTube.</p>
     </div>
-    {% if site.livestream_public %}<a class="button" href="{{ site.youtube_live }}">Watch live</a>{% else %}<span class="pill">Livestream coming soon</span>{% endif %}
+    <a class="button" href="{{ site.youtube_live }}">Watch live on YouTube</a>
   </div>
 </section>
+{% endif %}
 {% endblock %}

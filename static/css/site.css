@@ -126,8 +126,9 @@ p, ul, ol { margin: 0 0 1em; }
 .paths h3 a:hover { color: var(--brick); text-decoration: underline; }
 .paths p { color: var(--muted); margin: 0; }
 
-.questions { list-style: none; padding: 0; margin: 0; columns: 2; column-gap: 3rem; }
-.questions li { break-inside: avoid; border-bottom: 1px solid var(--stone); }
+.questions { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: 1fr 1fr; column-gap: 3rem; border-top: 1px solid var(--stone); }
+.questions li { border-bottom: 1px solid var(--stone); }
+.more { margin: 2rem 0 0; }
 .questions a { display: block; padding: 0.9rem 0; font-family: var(--display); font-size: 1.25rem; color: var(--ink); text-decoration: none; }
 .questions a:hover { color: var(--brick); }
 
@@ -270,12 +271,13 @@ a.cal-link:hover .cal-icon, a.cal-link:hover .cal-sub { color: #fff; }
   .hero-photo { max-width: 26rem; }
   .layout { grid-template-columns: 1fr; }
   .paths { grid-template-columns: 1fr; gap: 1.5rem; }
-  .questions { columns: 1; }
+  .questions { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; gap: 1.75rem; }
 }
 @media (max-width: 600px) {
   .brand-place { display: none; }
   .brand-mark { width: 2.5rem; }
+  .brand-name { font-size: 1.02rem; }
   .gallery { grid-template-columns: 1fr 1fr; }
   .gallery img:first-child { grid-column: 1 / -1; }
   .times li, .schedule .day { grid-template-columns: 1fr; gap: 0.2rem; }
@@ -284,3 +286,4 @@ a.cal-link:hover .cal-icon, a.cal-link:hover .cal-sub { color: #fff; }
   .history .ph-timeline li { grid-template-columns: 4.5rem 1fr; }
 }
 @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; transition: none !important; } }
+.nowrap { white-space: nowrap; }

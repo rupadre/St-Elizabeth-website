@@ -8,6 +8,7 @@
   </header>
   <div class="layout single">
     <div>
+      <figure class="page-photo"><img src="{{ static }}img/{{ page.image }}.jpg" alt="{{ page.image_alt }}"></figure>
       <h2 style="margin-top:0">Service times</h2>
       <p>{{ schedule.note }}</p>
       <div class="schedule">
@@ -18,6 +19,7 @@
         </div>
         {% endfor %}
       </div>
+      <div class="prose" style="margin-top:2.5rem">{{ page.html|safe }}</div>
       <h2>Parish calendar</h2>
       <p>Feast days add services. Check this month's calendar before you come.</p>
       {% include "_calendar.html" %}
@@ -29,8 +31,6 @@
       <p><span class="pill">Livestream coming soon</span></p>
       <p>We'll stream our services on YouTube shortly. Until then, the best way to experience Orthodox worship is to come in person.</p>
       {% endif %}
-      <div class="prose" style="margin-top:2.5rem">{{ page.html|safe }}</div>
-      <figure class="page-photo" style="margin-top:2rem"><img src="{{ static }}img/{{ page.image }}.jpg" alt="{{ page.image_alt }}"></figure>
     </div>
   </div>
 </div>
