@@ -368,3 +368,6 @@ a.cal-link:hover .cal-icon, a.cal-link:hover .cal-sub { color: #fff; }
 .pledge-form .form-error { color: var(--brick); font-weight: 600; min-height: 0; margin: 0 0 0.75rem; }
 .pledge-form .form-error:empty { display: none; }
 .pledge-form button { margin-bottom: 0.5rem; }
+
+.venmo-qr { margin: 0.5rem 0 1.5rem; }
+.venmo-qr img { width: 11rem; height: auto; }
