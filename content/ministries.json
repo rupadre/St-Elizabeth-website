@@ -23,7 +23,7 @@
       "x": 37.5,
       "y": 12.5,
       "image": "ministry-kitchen",
-      "image_alt": "A parishioner smiling beside a long table of food in the parish hall"
+      "image_alt": "A smiling parishioner in an apron at a table in the parish hall"
     },
     {
       "slug": "bookstore",
@@ -81,7 +81,9 @@
       "text": "Following St. Elizabeth's example of mercy, we collect and give help to neighbors in need.",
       "area": "3 / 1",
       "x": 12.5,
-      "y": 62.5
+      "y": 62.5,
+      "image": "ministry-charity",
+      "image_alt": "A parishioner smiling beside long tables filled with bread and food in the parish hall"
     },
     {
       "slug": "greeters",
