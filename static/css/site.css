@@ -348,3 +348,23 @@ a.cal-link:hover .cal-icon, a.cal-link:hover .cal-sub { color: #fff; }
 }
 @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; transition: none !important; } }
 .nowrap { white-space: nowrap; }
+
+/* Give: pledge card form */
+.pledge-form { background: var(--white); border: 1px solid var(--stone); border-top: 4px solid var(--brick); border-radius: 8px; padding: 1.4rem 1.5rem 1.2rem; margin: 1.5rem 0 1.5rem; }
+.pledge-form h3 { margin-top: 0; }
+.pledge-form fieldset { border: 0; padding: 0; margin: 0 0 1rem; }
+.pledge-form legend { font-weight: 700; margin-bottom: 0.5rem; padding: 0; }
+.pledge-form .field { margin-bottom: 1rem; }
+.pledge-form .field label { display: block; font-weight: 600; margin-bottom: 0.3rem; }
+.pledge-form .optional { font-weight: 400; color: var(--muted); }
+.pledge-form input[type="text"], .pledge-form input[type="email"], .pledge-form input[type="tel"] { width: 100%; min-height: 2.9rem; padding: 0.55rem 0.75rem; font: inherit; color: var(--ink); background: var(--white); border: 1px solid var(--muted); border-radius: 6px; }
+.pledge-form .amount input { max-width: 12rem; }
+.pledge-form input[aria-invalid="true"] { border: 2px solid var(--brick); }
+.pledge-form .period { display: flex; flex-wrap: wrap; gap: 0.5rem 1.25rem; }
+.pledge-form .period label, .pledge-form .check { display: inline-flex; align-items: center; gap: 0.5rem; min-height: 2.75rem; cursor: pointer; }
+.pledge-form input[type="radio"], .pledge-form input[type="checkbox"] { width: 1.25rem; height: 1.25rem; accent-color: var(--brick); }
+.pledge-form .check { margin-bottom: 0.75rem; }
+.pledge-form .form-hint { color: var(--muted); font-size: 0.95rem; }
+.pledge-form .form-error { color: var(--brick); font-weight: 600; min-height: 0; margin: 0 0 0.75rem; }
+.pledge-form .form-error:empty { display: none; }
+.pledge-form button { margin-bottom: 0.5rem; }

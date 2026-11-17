@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block title %}{{ page.title }} | {{ site.short_name }}{% endblock %}
+{% block description %}{{ page.summary }}{% endblock %}
+{% block content %}
+<div class="wrap">
+  <header class="page-head">
+    <h1>{{ page.title }}</h1>
+    <p class="lead">{{ page.summary }}</p>
+  </header>
+  <div class="layout single">
+    <article class="prose">
+      <figure class="page-photo"><img src="{{ static }}img/{{ page.image }}.jpg" alt="{{ page.image_alt }}"></figure>
+      {{ page.html|safe }}
+
+      <form class="pledge-form" id="pledge-form" data-email="{{ site.email }}" novalidate>
+        <h3>Pledge card</h3>
+        <p class="form-hint">Having prayerfully considered the need for support of St. Elizabeth New Martyr Mission, as a matter of faith, my financial commitment will be:</p>
+        <fieldset class="pledge-amount">
+          <legend>My pledge</legend>
+          <div class="field amount">
+            <label for="pledge-amount">Amount in dollars</label>
+            <input id="pledge-amount" name="amount" type="text" inputmode="decimal" autocomplete="off" required>
+          </div>
+          <div class="period" role="radiogroup" aria-label="How often">
+            <label><input type="radio" name="period" value="per week" checked> per week</label>
+            <label><input type="radio" name="period" value="per month"> per month</label>
+            <label><input type="radio" name="period" value="per year"> per year</label>
+          </div>
+        </fieldset>
+        <div class="field"><label for="pledge-name">Name</label><input id="pledge-name" name="name" type="text" autocomplete="name" required></div>
+        <div class="field"><label for="pledge-email">Email</label><input id="pledge-email" name="email" type="email" autocomplete="email" required></div>
+        <div class="field"><label for="pledge-phone">Phone <span class="optional">(optional)</span></label><input id="pledge-phone" name="phone" type="tel" autocomplete="tel"></div>
+        <div class="field"><label for="pledge-address">Address <span class="optional">(optional)</span></label><input id="pledge-address" name="address" type="text" autocomplete="street-address"></div>
+        <label class="check"><input type="checkbox" name="envelope" value="yes"> I need a stewardship envelope</label>
+        <p class="form-error" id="pledge-error" role="alert"></p>
+        <button class="button" type="submit">Send my pledge</button>
+        <p class="form-fallback" id="pledge-fallback" hidden>Your email should open now. If it didn't, <a href="#">open the email here</a>, or write to <a href="mailto:{{ site.email }}">{{ site.email }}</a>.</p>
+        <p class="form-hint">This opens your email with your pledge filled in, addressed to the parish office ({{ site.email }}). Just press send. Our treasurer will reply to confirm we received it.</p>
+      </form>
+
+      <p>Prefer paper? <a href="{{ static }}give/pledge-card.pdf">Print the pledge card (PDF)</a> and drop it in the Stewardship Box at church.</p>
+    </article>
+  </div>
+</div>
+<script src="{{ static }}js/pledge.js" defer></script>
+{% endblock %}

@@ -164,7 +164,7 @@ def _build_routes():
         ("events/", "events.html", ctx_events),
         ("glossary/", "page.html", ctx_simple("glossary", "new")),
         ("contact/", "contact.html", ctx_simple("contact", "contact")),
-        ("give/", "page.html", ctx_simple("give", "give")),
+        ("give/", "give.html", ctx_simple("give", "give")),
     ]
     for section in ("new", "orthodoxy-101"):
         for p in content.section_pages(section):
