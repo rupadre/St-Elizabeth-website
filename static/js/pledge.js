@@ -44,7 +44,18 @@
       "&body=" + encodeURIComponent(lines.join("\n"));
     var fallback = document.getElementById("pledge-fallback");
     fallback.querySelector("a").setAttribute("href", href);
+    document.getElementById("pledge-text").value = "To: " + form.getAttribute("data-email") + "\nSubject: Pledge card from " + name + "\n\n" + lines.join("\n");
+    document.getElementById("pledge-copied").textContent = "";
     fallback.hidden = false;
     window.location.href = href;
+  });
+
+  var copy = document.getElementById("pledge-copy");
+  copy.addEventListener("click", function () {
+    var box = document.getElementById("pledge-text");
+    var done = function () { document.getElementById("pledge-copied").textContent = "Copied. Now paste it into an email."; };
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(box.value).then(done, function () { box.select(); document.execCommand("copy"); done(); });
+    } else { box.select(); document.execCommand("copy"); done(); }
   });
 })();

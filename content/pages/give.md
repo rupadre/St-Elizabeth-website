@@ -15,9 +15,9 @@ Visiting for the first time? Please don't feel any obligation to give. We are si
 - **In person.** Cash, or a check made out to **St Elizabeth New Martyr Church**, in the collection basket during any service.
 - **Credit card at church.** You can also give by card in person at church.
 - **Online, any time.** Through [Tithe.ly](https://tithe.ly/give/?c=1516171), once or as a regular gift.
-- **Venmo.** [Give with Venmo](https://www.paypal.com/qrcodes/venmocs/53873842-8132-4fcc-a4c9-e5db29d4f4b3?created=1775958170), or scan the code below with your phone's camera.
+- **Venmo.** [Give with Venmo](https://venmo.com/u/newmartyrmission) to **@newmartyrmission**, or scan the code below in the Venmo app.
 
-<figure class="venmo-qr"><img src="/static/img/venmo-qr.png" alt="Venmo QR code for St. Elizabeth the New Martyr. Scan it with your phone's camera to give with Venmo." width="351" height="288"></figure>
+<figure class="venmo-qr"><img src="/static/img/venmo-qr.png" alt="Venmo QR code for St. Elizabeth the New Martyr. Scan it in the Venmo app to give." width="351" height="288"></figure>
 
 ## Where your gifts go
 

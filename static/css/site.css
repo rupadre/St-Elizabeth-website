@@ -371,3 +371,6 @@ a.cal-link:hover .cal-icon, a.cal-link:hover .cal-sub { color: #fff; }
 
 .venmo-qr { margin: 0.5rem 0 1.5rem; }
 .venmo-qr img { width: 11rem; height: auto; }
+.pledge-form .form-fallback { background: var(--plaster); border: 1px solid var(--stone); border-radius: 6px; padding: 1rem; margin: 0.5rem 0 1rem; }
+.pledge-form textarea { width: 100%; font: inherit; font-size: 0.9rem; padding: 0.6rem; border: 1px solid var(--muted); border-radius: 6px; background: var(--white); color: var(--ink); }
+#pledge-copied { color: var(--ink); font-weight: 600; margin-left: 0.5rem; }

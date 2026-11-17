@@ -34,8 +34,13 @@
         <label class="check"><input type="checkbox" name="envelope" value="yes"> I need a stewardship envelope</label>
         <p class="form-error" id="pledge-error" role="alert"></p>
         <button class="button" type="submit">Send my pledge</button>
-        <p class="form-fallback" id="pledge-fallback" hidden>Your email should open now. If it didn't, <a href="#">open the email here</a>, or write to <a href="mailto:{{ site.email }}">{{ site.email }}</a>.</p>
-        <p class="form-hint">This opens your email with your pledge filled in, addressed to the parish office ({{ site.email }}). Just press send. Our treasurer will reply to confirm we received it.</p>
+        <div class="form-fallback" id="pledge-fallback" hidden>
+          <p><strong>Your email should open now.</strong> If nothing happened, copy your pledge below and send it in any email to <strong>{{ site.email }}</strong>.</p>
+          <textarea id="pledge-text" rows="9" readonly aria-label="Your pledge, ready to copy"></textarea>
+          <p><button class="button quiet" type="button" id="pledge-copy">Copy my pledge</button> <span id="pledge-copied" role="status"></span></p>
+          <p><a href="#">Try opening my email again</a></p>
+        </div>
+        <p class="form-hint">This opens your email with your pledge filled in, addressed to the parish office ({{ site.email }}). Just press send. If your email doesn't open, you can copy the pledge and email it yourself. Our treasurer will reply to confirm we received it.</p>
       </form>
 
       <p>Prefer paper? <a href="{{ static }}give/pledge-card.pdf">Print the pledge card (PDF)</a> and drop it in the Stewardship Box at church.</p>
