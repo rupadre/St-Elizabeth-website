@@ -2,6 +2,8 @@
 title: What is salvation?
 summary: Salvation is being healed by God and united with Him, a life-long journey that begins in Baptism and is completed in the age to come.
 order: 3
+image: cross-roses
+image_alt: A wooden cross laid in a wreath of red roses
 ---
 Many Christians think of salvation mainly as forgiveness: God pardons our sins so we can go to heaven. Orthodox Christians believe that too, and much more. Sin is not only a broken rule; it is a sickness that wounds us and separates us from God. Christ came as the Physician of our souls and bodies.
 

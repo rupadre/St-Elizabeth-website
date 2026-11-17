@@ -2,6 +2,8 @@
 title: Do Orthodox Christians believe the Bible?
 summary: Yes. The Bible is the written Word of God, and we read it within the Church that wrote it down, gathered it and has prayed it for 2,000 years.
 order: 4
+image: icon-transfiguration
+image_alt: The icon of the Transfiguration of Christ on Mount Tabor, framed with orange and red roses
 ---
 The first Christians had no New Testament. They had the Apostles' preaching and the worship of the Church. Over time, the Church recognized which writings were inspired and gathered them into the Bible we have today. Scripture and the Church belong together.
 

@@ -2,6 +2,8 @@
 title: How do Orthodox Christians live their faith day to day?
 summary: Through prayer, fasting and almsgiving, the three practices Jesus taught in the Sermon on the Mount.
 order: 9
+image: icon-christ-love
+image_alt: An icon of Christ on the wall beside a white orchid, under a scroll with the character for "love"
 ---
 **Prayer.** Many Orthodox Christians keep an icon corner at home, where they pray morning and evening. One of our best-loved prayers is the Jesus Prayer: "Lord Jesus Christ, Son of God, have mercy on me, a sinner." Repeated quietly through the day, it helps us "pray without ceasing."
 

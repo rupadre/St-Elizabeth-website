@@ -3,6 +3,8 @@ title: Coming from the Catholic Church
 summary: Much of what you love, the Eucharist, the saints, the Mother of God and liturgical prayer, you will recognize here at once.
 order: 3
 card: The Eucharist, the saints, the Mother of God and liturgical prayer will feel familiar at once.
+image: iconostasis-feast
+image_alt: The iconostasis, the wall of icons before the altar, with fruit set out for blessing on the Feast of the Transfiguration
 ---
 For a thousand years, Rome and the Orthodox East were one Church. That shared inheritance is still easy to see: the seven sacraments, the real presence of Christ in the Eucharist, bishops in apostolic succession, devotion to the Theotokos and the saints, and a rich calendar of feasts and fasts.
 

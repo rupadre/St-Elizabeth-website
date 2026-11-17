@@ -19,6 +19,14 @@ Park in our lot, close to the door. On Sunday mornings, members who are able par
 
 Come as you are. Most people dress modestly, the way you would for a visit somewhere you respect. Some women cover their heads; it is not expected of visitors.
 
+## What you'll see
+
+<div class="gallery">
+<img src="/static/img/church-nave.jpg" alt="The inside of our church: rows of wooden pews facing the carved iconostasis, with tall stained-glass windows on each side" width="1600" height="1200" loading="lazy">
+<img src="/static/img/church-entrance.jpg" alt="The side entrance of the church, a glass door under a white gable with the St. Elizabeth sign" width="1200" height="1600" loading="lazy">
+<img src="/static/img/iconostasis.jpg" alt="The iconostasis, a carved wooden screen of icons in front of the altar" width="1600" height="1200" loading="lazy">
+</div>
+
 ## During the service
 
 Most of the service is sung, in English. Orthodox Christians traditionally stand to pray, but there are pews, and you are welcome to sit whenever you need to. You may see people make the Sign of the Cross, bow, light candles and kiss icons. Join in as you feel comfortable, or simply watch and pray. No one will single you out.

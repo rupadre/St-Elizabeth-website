@@ -3,6 +3,8 @@ title: New to faith, or from another religion
 summary: You don't need to believe anything yet to visit. Come with your questions, your doubts and your curiosity.
 order: 4
 card: You don't need to believe anything yet. Come with your questions, doubts and curiosity.
+image: church-exterior-sunny
+image_alt: Our red-brick church with its white tower on a sunny day
 ---
 Some people come to us after years without any faith. Some come from other religions. Some are simply drawn by the beauty of the services, or by a feeling that there must be more to life. All are welcome.
 

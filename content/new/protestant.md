@@ -3,6 +3,8 @@ title: Coming from a Protestant church
 summary: You love the Scriptures and you know Jesus as Lord. In the Orthodox Church you'll find both, in the setting of the Church's earliest worship.
 order: 2
 card: You love the Bible and know Jesus as Lord. Here you'll find both, in the Church's earliest form of worship.
+image: church-interior-windows
+image_alt: Inside our church: wooden pews, pointed stained-glass windows and icons along the walls
 ---
 Many of our parishioners grew up in Baptist, Methodist, Evangelical, Lutheran and non-denominational churches. Most came because they were reading Scripture and church history and wanted to know what the first Christians believed and how they worshipped.
 

@@ -2,6 +2,8 @@
 title: What is the Orthodox Church?
 summary: The Orthodox Church is the Church Jesus Christ founded, continuing from the Apostles to today in the same faith and worship.
 order: 1
+image: hierarchical-liturgy
+image_alt: A bishop, with priests and deacons in gold vestments, serving the Divine Liturgy
 ---
 On the day of Pentecost, the Holy Spirit came upon the Apostles, and the Church was born in Jerusalem. From there the Apostles carried the Gospel across the world, ordaining bishops in every city. The Orthodox Church is that same community, still holding the faith they taught, still celebrating the worship they handed down.
 

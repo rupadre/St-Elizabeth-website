@@ -2,6 +2,8 @@
 title: Do Orthodox Christians worship Mary?
 summary: No. We worship God alone, and we honor Mary as the Theotokos, the Mother of God, because she gave birth to Jesus Christ, who is God.
 order: 6
+image: icon-nativity-of-theotokos
+image_alt: The feast-day icon of the Nativity of the Theotokos, the birth of the Virgin Mary, surrounded by roses
 ---
 *Theotokos* is a Greek word meaning "God-bearer." The Church gave Mary this title in AD 431 to protect the truth about Jesus: the child she carried was not merely a man, but God in the flesh. Honoring her is a way of confessing who her Son is.
 
