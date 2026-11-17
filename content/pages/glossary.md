@@ -34,7 +34,7 @@ summary: Plain meanings for words you'll hear at an Orthodox church.
 
 **Theotokos.** "God-bearer," the Church's title for the Virgin Mary, Mother of God.
 
-**Theotokos Tea.** A parish gathering held around feasts of the Theotokos.
+**Tea for the Theotokos.** A parish gathering held around feasts of the Theotokos.
 
 **Vespers.** Evening prayer, served on Saturdays and the eves of feasts.
 
