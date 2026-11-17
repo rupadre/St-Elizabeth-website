@@ -248,6 +248,7 @@ p, ul, ol { margin: 0 0 1em; }
 .event-time { color: var(--muted); font-size: 0.95rem; margin-bottom: 0.5rem; }
 .event p:last-child { margin-bottom: 0; }
 .event img { margin-top: 0.9rem; max-width: 26rem; width: 100%; }
+.event img.event-icon { width: auto; max-width: 11rem; border-radius: 6px; }
 .events.compact { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 3rem; max-width: none; border-top: 1px solid var(--stone); }
 .events.compact .event { border-top: 0; border-bottom: 1px solid var(--stone); }
 .events.past .event-date { border-top-color: var(--muted); }

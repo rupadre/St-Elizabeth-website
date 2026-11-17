@@ -1,17 +1,11 @@
 {
-  "note": "Filled from the monthly parish calendar PDFs. One entry per event: date YYYY-MM-DD (end_date optional), title, time, text, optional image (file in static/img/ without .jpg) and image_alt. Events move from 'Coming up' to 'Past events' automatically after their date.",
+  "note": "Filled from the monthly parish calendar PDFs. One entry per event: date YYYY-MM-DD (end_date optional), title, time, text, optional image (file in static/img/ without .jpg) and image_alt; add \"image_small\": true for small calendar clip-art pictures. Events move from 'Coming up' to 'Past events' automatically after their date.",
   "events": [
     {
       "date": "2026-11-08",
       "title": "Feast of the Archangel Michael",
       "time": "9:10 AM Hours, 9:30 AM Divine Liturgy",
       "text": "Sunday Liturgy on the feast of St. Michael and all the bodiless powers of heaven, with coffee hour following."
-    },
-    {
-      "date": "2026-11-14",
-      "title": "Tea for the Theotokos",
-      "time": "12:00 PM",
-      "text": "A parish tea gathering in honor of the Mother of God."
     },
     {
       "date": "2026-11-15",
@@ -25,6 +19,15 @@
       "title": "Entrance of the Theotokos into the Temple",
       "time": "Friday 6:00 PM Vigil; Saturday 9:30 AM Divine Liturgy",
       "text": "We celebrate the day the young Virgin Mary was brought to the Temple and dedicated to God. Visitors are always welcome at feast-day services."
+    },
+    {
+      "date": "2026-11-21",
+      "title": "Tea for the Theotokos",
+      "time": "1:00 PM",
+      "text": "A parish tea gathering in honor of the Mother of God.",
+      "image": "tea-for-the-theotokos",
+      "image_alt": "A teapot pouring tea into cups, beside a red cross seal with the letters IC XC NI KA",
+      "image_small": true
     },
     {
       "date": "2026-11-22",
