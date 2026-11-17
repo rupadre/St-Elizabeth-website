@@ -117,7 +117,9 @@
       "text": "Learning, activities and friendship for the children and teens of the parish.",
       "area": "4 / 2",
       "x": 37.5,
-      "y": 87.5
+      "y": 87.5,
+      "image": "ministry-youth",
+      "image_alt": "A priest in blue vestments teaching children who sit on the floor of the church in front of him"
     },
     {
       "slug": "landscaping",
