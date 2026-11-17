@@ -16,6 +16,7 @@ Read this first in every session. The person you're working with is the parish p
 
 ## Publishing
 - In cloud sessions, work on a branch so Fr. Arkady can review the change first.
+- Fr. Arkady wants to see a preview before anything goes live. After every change: build, serve public/ on port 8765 (python3 -m http.server 8765 from public/), call report_preview_port for it, and send screenshots (phone and desktop). Never push to main until he has seen the preview and says "publish".
 - When he says "publish" (or "make it live", "looks good, publish"), merge the branch into main and push. Render then rebuilds the live site from main within a few minutes. Confirm in plain words when it's done.
 
 ## Design rules
