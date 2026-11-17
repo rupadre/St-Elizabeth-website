@@ -13,7 +13,7 @@ If you would like a gentler first step, try **Great Vespers on Saturday at 4:00 
 
 ## Where to park
 
-Park in our lot, close to the door. On Sunday mornings, members who are able park at the Glass City Boardwalk Event Center down the street to leave room for visitors and anyone who needs a close space.
+Visitors and anyone who needs a close space can park in our lot. On Sunday mornings, members who are able park at the Glass City Boardwalk Event Center down the street to leave room for you.
 
 ## What to wear
 
