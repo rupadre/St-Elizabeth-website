@@ -14,6 +14,10 @@ Read this first in every session. The person you're working with is the parish p
 - Templates must stay readable by both Django and Jinja2 (build_preview.py): use only extends, block, include, for, if, {{ value }} and |safe. No {% static %} or {% url %}; use {{ static }} and plain paths. Don't name JSON keys "items", "keys" or "values".
 - Before pushing: run `python manage.py distill-local public --force --collectstatic` and check pages at phone width (390px) and desktop.
 
+## Publishing
+- In cloud sessions, work on a branch so Fr. Arkady can review the change first.
+- When he says "publish" (or "make it live", "looks good, publish"), merge the branch into main and push. Render then rebuilds the live site from main within a few minutes. Confirm in plain words when it's done.
+
 ## Design rules
 - Palette from the church: brick #8b3a2b, ink #1b2233, glass blue #1e4f8f, gilt #b8892b (decoration and focus only, never text), plaster #f5f6f3. Fonts: Marcellus (headings), Public Sans (body).
 - Pointed-arch motif (like the church windows) is used only for the homepage photo and the logo. Keep it rare.
