@@ -1,0 +1,113 @@
+{
+  "note": "Filled from the monthly parish calendar PDFs. One entry per event: date YYYY-MM-DD (end_date optional), title, time, text, optional image (file in static/img/ without .jpg) and image_alt. Events move from 'Coming up' to 'Past events' automatically after their date.",
+  "events": [
+    {
+      "date": "2026-11-08",
+      "title": "Feast of the Archangel Michael",
+      "time": "9:10 AM Hours, 9:30 AM Divine Liturgy",
+      "text": "Sunday Liturgy on the feast of St. Michael and all the bodiless powers of heaven, with coffee hour following."
+    },
+    {
+      "date": "2026-11-14",
+      "title": "Tea for the Theotokos",
+      "time": "12:00 PM",
+      "text": "A parish tea gathering in honor of the Mother of God."
+    },
+    {
+      "date": "2026-11-15",
+      "title": "Beginning of the Nativity Fast",
+      "time": "",
+      "text": "The forty-day fast of preparation for Christmas begins."
+    },
+    {
+      "date": "2026-11-20",
+      "end_date": "2026-11-21",
+      "title": "Entrance of the Theotokos into the Temple",
+      "time": "Friday 6:00 PM Vigil; Saturday 9:30 AM Divine Liturgy",
+      "text": "We celebrate the day the young Virgin Mary was brought to the Temple and dedicated to God. Visitors are always welcome at feast-day services."
+    },
+    {
+      "date": "2026-11-22",
+      "title": "Bonfire at Fr. Arkady's",
+      "time": "5:00 PM",
+      "text": "An evening of fellowship around the fire. Ask after Sunday Liturgy for directions."
+    },
+    {
+      "date": "2026-11-26",
+      "title": "Thanksgiving Day Liturgy",
+      "time": "9:30 AM",
+      "text": "We begin Thanksgiving Day by giving thanks to God together at the Divine Liturgy."
+    },
+    {
+      "date": "2026-11-28",
+      "title": "Moleben to St. Elizabeth and church cleaning",
+      "time": "11:30 AM",
+      "text": "A short service of prayer to our patron saint, followed by cleaning and caring for our church together."
+    },
+    {
+      "date": "2026-12-04",
+      "title": "Men's pilgrimage to St. Gregory Palamas Monastery",
+      "time": "",
+      "text": "A pilgrimage for the men of the parish."
+    },
+    {
+      "date": "2026-12-06",
+      "title": "Feast of St. Nicholas",
+      "time": "9:10 AM Hours, 9:30 AM Divine Liturgy",
+      "text": "Sunday Liturgy on the feast of St. Nicholas the Wonderworker, followed by a special visitor and coffee hour."
+    },
+    {
+      "date": "2026-12-13",
+      "title": "Feast of St. Herman of Alaska",
+      "time": "9:10 AM Hours, 9:30 AM Divine Liturgy",
+      "text": "Sunday Liturgy honoring St. Herman, the first saint of the Orthodox Church in America."
+    },
+    {
+      "date": "2026-12-19",
+      "title": "Moleben and church cleaning",
+      "time": "11:00 AM",
+      "text": "Prayer together, then preparing our church for the Nativity of Christ."
+    },
+    {
+      "date": "2026-12-24",
+      "end_date": "2026-12-25",
+      "title": "Nativity of Our Lord (Christmas)",
+      "time": "Christmas Eve 6:00 PM Vigil; Christmas Day 9:30 AM Divine Liturgy",
+      "text": "The great feast of Christ's birth. A beautiful time to visit an Orthodox church for the first time."
+    },
+    {
+      "date": "2026-12-26",
+      "title": "Feast of St. Arkady",
+      "time": "9:30 AM Divine Liturgy",
+      "text": "Divine Liturgy on the name day of our pastor, Fr. Arkady."
+    },
+    {
+      "date": "2026-12-27",
+      "title": "Nativity concert and potluck",
+      "time": "After the 9:30 AM Divine Liturgy",
+      "text": "Christmas music and a shared potluck meal on the Sunday after the Nativity. Everyone is welcome."
+    },
+    {
+      "date": "2027-01-01",
+      "title": "Feast of St. Basil the Great",
+      "time": "9:30 AM Divine Liturgy",
+      "text": "New Year's Day Liturgy on the feast of St. Basil."
+    },
+    {
+      "date": "2024-05-05",
+      "title": "Our first Pascha in Walbridge",
+      "time": "",
+      "text": "We celebrated the Resurrection of Christ for the first time in our new church, with the midnight procession by candlelight and a joyful Paschal meal together.",
+      "image": "pascha-procession",
+      "image_alt": "Parishioners holding candles outside the church doors at night during the Paschal procession"
+    },
+    {
+      "date": "2024-04-28",
+      "title": "First Divine Liturgy in our Walbridge church",
+      "time": "",
+      "text": "On Palm Sunday, the parish served its first Liturgy in the historic 1883 church on East Broadway, our new home.",
+      "image": "first-liturgy-2024",
+      "image_alt": "Parishioners at the first Divine Liturgy in the Walbridge church, Palm Sunday 2024"
+    }
+  ]
+}

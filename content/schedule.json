@@ -20,9 +20,24 @@
       "day": "Wednesday",
       "services": [
         {
+          "time": "7:25 AM",
+          "name": "Divine Liturgy",
+          "detail": "An early weekday Liturgy"
+        },
+        {
           "time": "6:00 PM",
-          "name": "Vespers, Bible Study and the Jesus Prayer",
-          "detail": "Evening prayer, then study and quiet prayer together"
+          "name": "Vespers",
+          "detail": "Evening prayer"
+        },
+        {
+          "time": "6:45 PM",
+          "name": "Bible Study",
+          "detail": "Reading Scripture together"
+        },
+        {
+          "time": "7:30 PM",
+          "name": "The Jesus Prayer",
+          "detail": "Quiet prayer together"
         }
       ]
     },

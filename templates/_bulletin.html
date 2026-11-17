@@ -1,0 +1,4 @@
+<div class="bulletin">
+  {% if bulletin.url %}<a class="cal-link" href="{{ bulletin.url }}"><svg aria-hidden="true" viewBox="0 0 24 24" class="cal-icon"><path fill="currentColor" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1zm8 1.5V8h4.5zM8 12h8v1.6H8zm0 3.5h8v1.6H8zm0-7h4v1.6H8z"/></svg><span><span class="cal-month">This week's bulletin</span><span class="cal-sub">{{ bulletin.label }} (PDF)</span></span></a>
+  {% else %}<span class="cal-link is-missing"><svg aria-hidden="true" viewBox="0 0 24 24" class="cal-icon"><path fill="currentColor" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1zm8 1.5V8h4.5zM8 12h8v1.6H8zm0 3.5h8v1.6H8zm0-7h4v1.6H8z"/></svg><span><span class="cal-month">This week's bulletin</span><span class="cal-sub">Coming soon</span></span></span>{% endif %}
+</div>

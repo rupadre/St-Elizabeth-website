@@ -23,12 +23,16 @@ Read this first in every session. The person you're working with is the parish p
 - Monthly calendar: add the PDF to static/calendar/ and a line to content/calendar.json ("YYYY-MM": "/static/calendar/file.pdf"). The site names this month and next month automatically.
 - Livestream goes public: set "livestream_public": true in content/site.json.
 - Service times: content/schedule.json. Ministries: content/ministries.json.
+- Events come from the monthly calendar: when Fr. Arkady sends a new month's calendar PDF, read it and add each feast, special service and parish event (not the regular weekly services) to content/events.json (date YYYY-MM-DD, optional end_date, title, time, text, optional photo). Copy times exactly from the calendar; never invent them. Events move from "Coming up" to "Past events" by themselves after their date; the homepage shows the next four.
+- Bulletin: put the PDF in static/bulletin/ and set url and label (e.g. "Sunday, November 22") in content/bulletin.json. Empty url shows "Coming soon".
 
 ## Open items (as of November 17, 2026)
 - Calendar PDFs still link to the old Squarespace site; move November/December PDFs into static/calendar/ before Squarespace is cancelled.
-- Confirm Saturday Great Vespers at 4:00 PM is the regular weekly time.
 - Fr. Arkady's title: the old site says Igumen (2021), the history file says Archimandrite. The site currently says "Fr. Arkady (Migunov)".
 - Ministries: Fr. Arkady will send the full list (12+); current descriptions of Theotokos Tea and Church School are placeholders.
 - Photo permissions pending: children's photos, the baptism photo, the St. George Cathedral exterior (DSC_0005), and the full-length St. Elizabeth icon (13340-elizavetaJPG_2000.jpg, may be from an icon shop). These are kept out of static/img/ except the icon, which is in use pending confirmation.
 - Homepage Pascha photo is only 960px wide; ask for the original if available.
 - Point stelizabethmartyr.org to Render when the site is approved.
+- Events for November and December 2026 were read from the parish calendar PDFs on November 17, 2026.
+- No bulletin posted yet; ask Fr. Arkady for the current bulletin PDF.
+- The December calendar PDF footer says "2901 E Broadway"; the site and November calendar say "28010 East Broadway S". Confirm which is right.

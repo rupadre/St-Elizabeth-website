@@ -17,7 +17,7 @@ NAV = [
     {"key": "worship", "label": "Worship", "url": "/worship/"},
     {"key": "orthodoxy-101", "label": "Orthodoxy 101", "url": "/orthodoxy-101/"},
     {"key": "ministries", "label": "Ministries", "url": "/ministries/"},
-    {"key": "calendar", "label": "Calendar", "url": "/calendar/"},
+    {"key": "events", "label": "Events & calendar", "url": "/events/"},
     {"key": "about", "label": "About", "url": "/about/"},
 ]
 
@@ -44,6 +44,7 @@ def calendar_months(today=None):
 def base_context(section=""):
     return {
         "calendar_months": calendar_months(),
+        "bulletin": content.data("bulletin"),
         "calendar_json": json.dumps(content.data("calendar")["months"]),
         "site": content.data("site"),
         "schedule": content.data("schedule"),
@@ -53,8 +54,43 @@ def base_context(section=""):
     }
 
 
+WEEKDAYS = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+
+
+def events(today=None):
+    """All events, split into coming up (soonest first) and past (newest first).
+
+    The split is made when the site is built; static/js/events.js moves
+    events in the visitor's browser once their date has passed."""
+    today = today or datetime.date.today()
+    upcoming, past = [], []
+    for e in content.data("events")["events"]:
+        e = dict(e)
+        start = datetime.date.fromisoformat(e["date"])
+        end = datetime.date.fromisoformat(e.get("end_date", e["date"]))
+        e["end_date"] = end.isoformat()
+        e["day"] = start.day
+        e["month_short"] = MONTHS[start.month - 1][:3]
+        e["year"] = start.year
+        e["long_date"] = f"{WEEKDAYS[start.weekday()]}, {MONTHS[start.month - 1]} {start.day}, {start.year}"
+        if end != start:
+            e["long_date"] += f" to {WEEKDAYS[end.weekday()]}, {MONTHS[end.month - 1]} {end.day}, {end.year}"
+        (past if end < today else upcoming).append(e)
+    upcoming.sort(key=lambda e: e["date"])
+    past.sort(key=lambda e: e["date"], reverse=True)
+    return upcoming, past
+
+
+def ctx_events():
+    ctx = base_context("events")
+    ctx["upcoming"], ctx["past"] = events()
+    return ctx
+
+
 def ctx_home():
     ctx = base_context("home")
+    upcoming, _ = events()
+    ctx["upcoming"] = upcoming[:4]
     ctx["paths"] = [content.page("new", s) for s in ("protestant", "catholic", "non-religious")]
     o101 = {p["slug"]: p for p in content.section_pages("orthodoxy-101")}
     ctx["questions"] = [o101[s] for s in ("icons", "mary-and-the-saints", "ethnic", "what-is-the-orthodox-church")]
@@ -124,7 +160,8 @@ def _build_routes():
         ("ministries/", "ministries.html", ctx_ministries),
         ("about/", "about.html", ctx_about),
         ("about/history/", "history.html", ctx_history),
-        ("calendar/", "calendar.html", ctx_simple("calendar", "calendar")),
+        ("calendar/", "calendar.html", ctx_simple("calendar", "events")),
+        ("events/", "events.html", ctx_events),
         ("glossary/", "page.html", ctx_simple("glossary", "new")),
         ("contact/", "contact.html", ctx_simple("contact", "contact")),
         ("give/", "page.html", ctx_simple("give", "give")),

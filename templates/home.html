@@ -28,8 +28,9 @@
         {% endfor %}{% endif %}{% endfor %}
       </ul>
       <p class="muted">Great Vespers on Saturday at 4:00 PM is a quieter first service. <a href="/worship/">All service times</a></p>
-      <h2 class="board-sub">Parish calendar</h2>
+      <h2 class="board-sub">Calendar and bulletin</h2>
       {% include "_calendar.html" %}
+      {% include "_bulletin.html" %}
     </div>
     <div>
       <h2>Find us</h2>
@@ -45,6 +46,21 @@
     </div>
   </div>
 </section>
+
+{% if upcoming %}
+<section class="section" data-events-section>
+  <div class="wrap">
+    <div class="intro">
+      <h2>Coming up</h2>
+      <p>Feasts and parish events. Everyone is welcome.</p>
+    </div>
+    <ul class="events compact" data-events="upcoming">
+      {% for e in upcoming %}{% include "_event.html" %}{% endfor %}
+    </ul>
+    <p class="more"><a class="button quiet" href="/events/">All events and calendar</a></p>
+  </div>
+</section>
+{% endif %}
 
 <section class="section">
   <div class="wrap">

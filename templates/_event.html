@@ -1,0 +1,10 @@
+<li class="event" data-event-end="{{ e.end_date }}">
+  <div class="event-date" aria-hidden="true"><span class="m">{{ e.month_short }}</span><span class="d">{{ e.day }}</span><span class="y">{{ e.year }}</span></div>
+  <div class="event-body">
+    <h3>{{ e.title }}</h3>
+    <p class="event-when">{{ e.long_date }}</p>
+    {% if e.time %}<p class="event-time">{{ e.time }}</p>{% endif %}
+    {% if e.text %}<p>{{ e.text }}</p>{% endif %}
+    {% if e.image %}<img src="{{ static }}img/{{ e.image }}.jpg" alt="{{ e.image_alt }}" loading="lazy">{% endif %}
+  </div>
+</li>

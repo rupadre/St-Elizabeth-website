@@ -1,0 +1,5 @@
+{
+  "note": "The current bulletin. Put the PDF in static/bulletin/ and set url to /static/bulletin/<file>.pdf, with the Sunday date as label. Leave url empty to show 'coming soon'.",
+  "label": "",
+  "url": ""
+}

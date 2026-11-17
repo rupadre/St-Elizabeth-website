@@ -9,6 +9,9 @@ A Django site published as plain web pages (with django-distill) and hosted free
 | Service times, parking note | `content/schedule.json` |
 | Address, phone, giving link, livestream on/off | `content/site.json` |
 | Ministries | `content/ministries.json` |
+| Coming and past events | `content/events.json` (filled from each monthly calendar) |
+| Weekly bulletin | Put the PDF in `static/bulletin/`, then set it in `content/bulletin.json` |
+| Events (coming up and past) | `content/events.json` |
 | Monthly calendars | Put the PDF in `static/calendar/` and add a line to `content/calendar.json`, e.g. `"2027-01": "/static/calendar/2027-01.pdf"` |
 | "I'm new" pages | `content/new/*.md` |
 | Orthodoxy 101 pages | `content/orthodoxy-101/*.md` |

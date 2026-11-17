@@ -47,7 +47,7 @@
       <div>
         <h2>{{ site.short_name }}</h2>
         <address style="font-style:normal">{{ site.address_line }}<br>{{ site.city_line }}</address>
-        <p><a href="{{ site.phone_link }}">{{ site.phone }}</a> (call or text Fr. Arkady)</p>
+        <p><a href="{{ site.phone_link }}">{{ site.phone }}</a> (call or text Fr. Arkady)<br><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
         <p>Sunday Divine Liturgy at {{ schedule.sunday_first }}</p>
       </div>
       <div>
@@ -55,7 +55,8 @@
         <ul>
           <li><a href="/new/first-visit/">Your first visit</a></li>
           <li><a href="/worship/">Service times</a></li>
-          <li><a href="/calendar/">Parish calendar</a></li>
+          <li><a href="/events/">Events and calendar</a></li>
+          <li><a href="/events/#bulletin">Bulletin</a></li>
           <li><a href="/contact/">Contact and directions</a></li>
         </ul>
       </div>

@@ -13,4 +13,4 @@ You may be surprised how much Bible you hear in an Orthodox service: Psalms, rea
 
 **Go deeper:** Dcn. Seraphim Rohlin, [*How to Be an Orthodox Christian*](https://app.ancientfaith.com/podcasts/how-to-be-an-orthodox-christian/), "How to Read the Holy Scriptures" (Ancient Faith podcast)
 
-**Come and see.** Join our Wednesday evening Bible Study after Vespers at 6 PM.
+**Come and see.** Join our Wednesday Bible Study at 6:45 PM, right after Vespers.

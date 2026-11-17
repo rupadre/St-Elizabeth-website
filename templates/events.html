@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block title %}Events and calendar | {{ site.short_name }}{% endblock %}
+{% block description %}Feasts, services and parish events at St. Elizabeth the New Martyr Orthodox Church in Walbridge, Ohio.{% endblock %}
+{% block content %}
+<div class="wrap">
+  <header class="page-head">
+    <h1>Events, calendar and bulletin</h1>
+    <p class="lead">Feasts, special services and parish gatherings. Everyone is welcome.</p>
+  </header>
+  <div class="layout single events-page">
+    <div>
+      <h2 style="margin-top:0">Parish calendar</h2>
+      <p>Every service and event, month by month.</p>
+      {% include "_calendar.html" %}
+
+      <h2 id="bulletin">Bulletin</h2>
+      <p>Announcements, readings and news for the week.</p>
+      {% include "_bulletin.html" %}
+
+      <h2 id="coming-up">Coming up</h2>
+      <ul class="events" data-events="upcoming">
+        {% for e in upcoming %}{% include "_event.html" %}{% endfor %}
+      </ul>
+      <p class="events-empty" data-events-empty{% if upcoming %} hidden{% endif %}>New events will be posted here soon. Check the parish calendar for this month's services.</p>
+
+      <h2 id="past">Past events</h2>
+      <ul class="events past" data-events="past">
+        {% for e in past %}{% include "_event.html" %}{% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>
+<script src="{{ static }}js/events.js" defer></script>
+{% endblock %}
