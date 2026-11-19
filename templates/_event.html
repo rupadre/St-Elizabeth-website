@@ -5,6 +5,7 @@
     <p class="event-when">{{ e.long_date }}</p>
     {% if e.time %}<p class="event-time">{{ e.time }}</p>{% endif %}
     {% if e.text %}<p>{{ e.text }}</p>{% endif %}
+    {% if e.story %}<p class="event-story"><a href="/parish-life/{{ e.story }}/">Read the story and see photos</a></p>{% endif %}
     {% if e.image %}<img{% if e.image_small %} class="event-icon"{% endif %} src="{{ static }}img/{{ e.image }}.jpg" alt="{{ e.image_alt }}" loading="lazy">{% endif %}
   </div>
 </li>

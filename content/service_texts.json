@@ -1,0 +1,31 @@
+{
+  "note": "One entry per service book. To post a book: put the PDF in static/texts/ and set file to its path, e.g. \"/static/texts/great-vespers.pdf\". An empty file shows \"Coming soon\". Add new books to the group they belong in, or add a new group.",
+  "groups": [
+    {
+      "title": "Weekly services",
+      "texts": [
+        {"title": "Great Vespers", "text": "Saturday evening prayer that begins the celebration of Sunday.", "file": ""},
+        {"title": "Small Vespers", "text": "A shorter form of evening prayer.", "file": ""},
+        {"title": "Divine Liturgy", "text": "Our main Sunday service, with Scripture, prayer and Holy Communion.", "file": ""}
+      ]
+    },
+    {
+      "title": "Our patron saint",
+      "texts": [
+        {"title": "Moleben to St. Elizabeth the New Martyr", "text": "A short service of prayer to our patron saint.", "file": ""}
+      ]
+    },
+    {
+      "title": "Prayers for the departed",
+      "texts": [
+        {"title": "Panikhida", "text": "A memorial service of prayer for those who have died.", "file": ""}
+      ]
+    },
+    {
+      "title": "Sacraments",
+      "texts": [
+        {"title": "Holy Baptism", "text": "The service of Baptism and Chrismation.", "file": ""}
+      ]
+    }
+  ]
+}

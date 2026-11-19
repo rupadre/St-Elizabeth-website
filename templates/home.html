@@ -110,7 +110,23 @@
 </section>
 
 <section class="section white">
-  <div class="wrap">
+  {% if story %}
+  <div class="wrap" data-feature-until="{{ story.feature_until }}">
+    <div class="intro">
+      <h2>From parish life</h2>
+    </div>
+    <article class="feature">
+      <a class="feature-photo" href="/parish-life/{{ story.slug }}/" tabindex="-1" aria-hidden="true"><img src="{{ static }}img/{{ story.image }}.jpg" alt="" loading="lazy"></a>
+      <div>
+        <p class="story-date">{{ story.long_date }}</p>
+        <h3><a href="/parish-life/{{ story.slug }}/">{{ story.title }}</a></h3>
+        <p>{{ story.summary }}</p>
+        <p class="more"><a class="button quiet" href="/parish-life/">More stories and photos</a></p>
+      </div>
+    </article>
+  </div>
+  {% endif %}
+  <div class="wrap" data-feature-fallback{% if story %} hidden{% endif %}>
     <div class="intro">
       <h2>More than Sunday morning</h2>
       <p>Bible study, prayer, shared meals and a parish family that gathers through the year.</p>
@@ -120,7 +136,7 @@
       <img src="{{ static }}img/parish-grill.jpg" alt="Parishioners grilling outdoors at a parish gathering" width="960" height="720">
       <img src="{{ static }}img/parish-picnic.jpg" alt="Parishioners at a summer picnic under a park pavilion" width="960" height="720">
     </div>
-    <p class="more"><a class="button quiet" href="/ministries/">See our ministries</a></p>
+    <p class="more"><a class="button quiet" href="/ministries/">See our ministries</a> <a class="button quiet" href="/parish-life/">Stories and photos</a></p>
   </div>
 </section>
 
@@ -135,4 +151,5 @@
   </div>
 </section>
 {% endif %}
+<script src="{{ static }}js/feature.js" defer></script>
 {% endblock %}

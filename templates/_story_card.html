@@ -1,0 +1,8 @@
+<li class="story-card">
+          {% if s.image %}<img src="{{ static }}img/{{ s.image }}.jpg" alt="" loading="lazy">{% endif %}
+          <div>
+            <p class="story-date">{{ s.long_date }}</p>
+            <h3><a href="/parish-life/{{ s.slug }}/">{{ s.title }}</a></h3>
+            <p>{{ s.summary }}</p>
+          </div>
+        </li>

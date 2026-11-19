@@ -24,9 +24,24 @@
       <p class="events-empty" data-events-empty{% if upcoming %} hidden{% endif %}>New events will be posted here soon. Check the parish calendar for this month's services.</p>
 
       <h2 id="past">Past events</h2>
+      {% if featured_stories %}
+      <h3 class="highlights-head">Highlights from parish life</h3>
+      <ul class="stories highlights">
+        {% for s in featured_stories %}{% include "_story_card.html" %}{% endfor %}
+      </ul>
+      <p class="more-stories"><a href="/parish-life/">All stories and photos</a></p>
+      {% endif %}
       <ul class="events past" data-events="past">
         {% for e in past %}{% include "_event.html" %}{% endfor %}
       </ul>
+      {% for y in older_years %}
+      <details class="past-year">
+        <summary>Earlier events in {{ y.year }}</summary>
+        <ul class="events past">
+          {% for e in y.entries %}{% include "_event.html" %}{% endfor %}
+        </ul>
+      </details>
+      {% endfor %}
     </div>
   </div>
 </div>

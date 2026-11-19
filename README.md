@@ -10,6 +10,8 @@ A Django site published as plain web pages (with django-distill) and hosted free
 | Address, phone, giving link, livestream on/off | `content/site.json` |
 | Ministries | `content/ministries.json` |
 | Coming and past events | `content/events.json` (filled from each monthly calendar) |
+| Stories and photos after an event (Parish life) | `content/parish-life/YYYY-MM-DD-name.md`; add `featured: yes` to show it on the homepage for 6 weeks |
+| Service texts (PDF books) | Put the PDF in `static/texts/`, then set `file` on its entry in `content/service_texts.json` |
 | Weekly bulletin | Put the PDF in `static/bulletin/`, then set it in `content/bulletin.json` |
 | Monthly calendars | Put the PDF in `static/calendar/` and add a line to `content/calendar.json`, e.g. `"2027-01": "/static/calendar/2027-01.pdf"` |
 | "I'm new" pages | `content/new/*.md` |

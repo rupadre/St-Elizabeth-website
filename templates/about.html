@@ -11,14 +11,7 @@
       <figure class="page-photo"><img src="{{ static }}img/archbishop-and-rector.jpg" alt="Archbishop Alexander and Fr. Arkady standing before the iconostasis at St. Elizabeth's" width="768" height="960" style="max-width:24rem"></figure>
       {{ page.html|safe }}
     </article>
-    <aside class="side" aria-label="About">
-      <h2>About</h2>
-      <ul>
-        <li><a href="/about/" aria-current="page">Our clergy and patron</a></li>
-        <li><a href="/about/history/">Our history</a></li>
-        <li><a href="/contact/">Contact and directions</a></li>
-      </ul>
-    </aside>
+    {% include "_about_side.html" %}
   </div>
 </div>
 {% endblock %}

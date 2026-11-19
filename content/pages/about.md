@@ -20,6 +20,8 @@ In 2006 Fr. Arkady came to the United States as a missionary, and for more than 
 
 Her journey, from a Protestant upbringing to Orthodoxy and a life poured out in love, is close to the hearts of many who find their way to our parish.
 
+[Read the life of St. Elizabeth](/about/st-elizabeth/)
+
 ## Our diocese
 
 We belong to the Bulgarian Diocese of the Orthodox Church in America, founded by Bulgarian and Macedonian immigrant communities and part of the OCA since 1976.

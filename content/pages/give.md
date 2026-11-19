@@ -1,6 +1,6 @@
 ---
 title: Give
-summary: Your gifts keep our historic church open, support our ministries and help us welcome newcomers.
+summary: Everything we have is a gift from God. Giving back a share with a thankful heart is stewardship: it cares for our historic church, our ministries and every newcomer who walks through our doors.
 image: church-flowers
 image_alt: The front of our 1883 red-brick church, with a barrel of flowers on the lawn
 ---

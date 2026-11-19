@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}{{ page.title }} | {{ site.short_name }}{% endblock %}
+{% block description %}{{ page.summary }}{% endblock %}
+{% block content %}
+<div class="wrap">
+  <header class="page-head">
+    <p class="crumb"><a href="/about/">About</a></p>
+    <h1>{{ page.title }}</h1>
+    <p class="lead">{{ page.summary }}</p>
+  </header>
+  <div class="layout">
+    <article class="prose saint">
+      <figure class="patron-icon"><img src="{{ static }}img/icon-st-elizabeth.jpg" alt="Icon of St. Elizabeth the New Martyr in a white monastic habit, holding a cross and prayer rope" width="799" height="1600"><figcaption>St. Elizabeth the New Martyr. Feast day: July 18.</figcaption></figure>
+      {{ page.html|safe }}
+    </article>
+    {% include "_about_side.html" %}
+  </div>
+</div>
+{% endblock %}

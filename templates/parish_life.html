@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}Parish life | {{ site.short_name }}{% endblock %}
+{% block description %}Stories and photos from feasts and gatherings at St. Elizabeth the New Martyr Orthodox Church in Walbridge, Ohio.{% endblock %}
+{% block content %}
+<div class="wrap">
+  <header class="page-head">
+    <p class="crumb"><a href="/events/">Events and calendar</a></p>
+    <h1>Parish life</h1>
+    <p class="lead">Stories and photos from our feasts and gatherings. To see what's coming next, visit <a href="/events/">Events and calendar</a>.</p>
+  </header>
+  <div class="stories-page">
+    {% for y in years %}
+    <section aria-labelledby="year-{{ y.year }}">
+      <h2 class="year-head" id="year-{{ y.year }}">{{ y.year }}</h2>
+      <ul class="stories">
+        {% for s in y.entries %}
+        {% include "_story_card.html" %}
+        {% endfor %}
+      </ul>
+    </section>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}

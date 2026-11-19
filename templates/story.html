@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}{{ story.title }} | {{ site.short_name }}{% endblock %}
+{% block description %}{{ story.summary }}{% endblock %}
+{% block content %}
+<div class="wrap">
+  <header class="page-head">
+    <p class="crumb"><a href="/parish-life/">Parish life</a></p>
+    <p class="story-date">{{ story.long_date }}</p>
+    <h1>{{ story.title }}</h1>
+    <p class="lead">{{ story.summary }}</p>
+  </header>
+  <div class="layout single">
+    <article class="prose story-body">
+      {% if story.image %}<figure class="page-photo"><img src="{{ static }}img/{{ story.image }}.jpg" alt="{{ story.image_alt }}"></figure>{% endif %}
+      {{ story.html|safe }}
+      <nav class="story-nav" aria-label="More from parish life">
+        {% if older %}<a href="/parish-life/{{ older.slug }}/"><span>Earlier</span>{{ older.title }}</a>{% endif %}
+        {% if newer %}<a class="newer" href="/parish-life/{{ newer.slug }}/"><span>Later</span>{{ newer.title }}</a>{% endif %}
+      </nav>
+      <p><a class="button quiet" href="/parish-life/">All stories and photos</a></p>
+    </article>
+  </div>
+</div>
+{% endblock %}

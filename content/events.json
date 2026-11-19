@@ -1,5 +1,5 @@
 {
-  "note": "Filled from the monthly parish calendar PDFs. One entry per event: date YYYY-MM-DD (end_date optional), title, time, text, optional image (file in static/img/ without .jpg) and image_alt; add \"image_small\": true for small calendar clip-art pictures. Events move from 'Coming up' to 'Past events' automatically after their date.",
+  "note": "Filled from the monthly parish calendar PDFs. One entry per event: date YYYY-MM-DD (end_date optional), title, time, text, optional image (file in static/img/ without .jpg) and image_alt; optional story (file name in content/parish-life/ without .md) once a story with photos is written; add \"image_small\": true for small calendar clip-art pictures. Events move from 'Coming up' to 'Past events' automatically after their date.",
   "events": [
     {
       "date": "2026-11-08",
@@ -119,6 +119,7 @@
       "title": "Our first Pascha in Walbridge",
       "time": "",
       "text": "We celebrated the Resurrection of Christ for the first time in our new church, with the midnight procession by candlelight and a joyful Paschal meal together.",
+      "story": "2024-05-05-first-pascha-in-walbridge",
       "image": "pascha-procession",
       "image_alt": "Parishioners holding candles outside the church doors at night during the Paschal procession"
     },
@@ -127,6 +128,7 @@
       "title": "First Divine Liturgy in our Walbridge church",
       "time": "",
       "text": "On Palm Sunday, the parish served its first Liturgy in the historic 1883 church on East Broadway, our new home.",
+      "story": "2024-04-28-first-liturgy-in-walbridge",
       "image": "first-liturgy-2024",
       "image_alt": "Parishioners at the first Divine Liturgy in the Walbridge church, Palm Sunday 2024"
     }

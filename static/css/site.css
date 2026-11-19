@@ -374,3 +374,64 @@ a.cal-link:hover .cal-icon, a.cal-link:hover .cal-sub { color: #fff; }
 .pledge-form .form-fallback { background: var(--plaster); border: 1px solid var(--stone); border-radius: 6px; padding: 1rem; margin: 0.5rem 0 1rem; }
 .pledge-form textarea { width: 100%; font: inherit; font-size: 0.9rem; padding: 0.6rem; border: 1px solid var(--muted); border-radius: 6px; background: var(--white); color: var(--ink); }
 #pledge-copied { color: var(--ink); font-weight: 600; margin-left: 0.5rem; }
+
+/* Parish life: stories and photos from past events */
+.story-date { color: var(--brick); font-weight: 600; font-size: 0.95rem; margin: 0 0 0.3rem; }
+.page-head .story-date { margin-bottom: 0.6rem; }
+.year-head { margin: 0 0 1rem; padding-top: 0.5rem; border-top: 1px solid var(--stone); }
+.stories-page { padding-bottom: 5rem; }
+.stories-page section + section { margin-top: 2.5rem; }
+.stories { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 19rem), 1fr)); gap: 1.5rem; }
+.story-card { background: var(--white); border: 1px solid var(--stone); display: flex; flex-direction: column; position: relative; }
+.story-card img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+.story-card > div { padding: 1rem 1.2rem 1.2rem; }
+.story-card h3 { margin: 0 0 0.4rem; font-size: 1.3rem; }
+.story-card h3 a { color: var(--ink); text-decoration: none; }
+.story-card h3 a::after { content: ""; position: absolute; inset: 0; }
+.story-card:hover h3 a, .story-card h3 a:focus-visible { color: var(--brick); text-decoration: underline; }
+.story-card p:last-child { margin-bottom: 0; color: var(--muted); }
+.story-body img { width: 100%; margin: 1.5rem 0; }
+.story-nav { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 2.5rem 0 1rem; padding-top: 1.25rem; border-top: 1px solid var(--stone); }
+.story-nav a { display: block; min-height: 2.75rem; }
+.story-nav a.newer { grid-column: 2; text-align: right; }
+.story-nav span { display: block; font-size: 0.85rem; color: var(--muted); }
+.feature { display: grid; grid-template-columns: 3fr 2fr; gap: clamp(1.5rem, 4vw, 3rem); align-items: center; }
+.feature-photo img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+.feature h3 { font-size: clamp(1.5rem, 3vw, 2rem); margin: 0 0 0.6rem; }
+.feature h3 a { color: var(--ink); text-decoration: none; }
+.feature h3 a:hover { color: var(--brick); text-decoration: underline; }
+.feature .more { margin-top: 1.25rem; }
+.more .button + .button { margin-left: 0.5rem; }
+.event-story { margin-top: 0.5rem; }
+.event-story a { display: inline-block; min-height: 2.75rem; padding: 0.55rem 0; font-weight: 600; }
+.past-year { max-width: 46rem; margin: 0.75rem 0; border: 1px solid var(--stone); background: var(--white); }
+.past-year summary { cursor: pointer; min-height: 2.75rem; padding: 0.7rem 1rem; font-weight: 600; color: var(--glass); }
+.past-year .events { padding: 0 1rem; margin: 0; }
+.past-year .event:last-child { border-bottom: 0; }
+@media (max-width: 760px) {
+  .feature { grid-template-columns: 1fr; }
+}
+@media (max-width: 600px) {
+  .story-nav { grid-template-columns: 1fr; }
+  .story-nav a.newer { grid-column: auto; text-align: left; }
+  .more .button + .button { margin-left: 0; margin-top: 0.5rem; }
+}
+.highlights-head { font-size: 1.35rem; margin: 0.5rem 0 1rem; }
+.stories.highlights { margin-bottom: 0.5rem; }
+.more-stories { margin: 0 0 2rem; }
+.more-stories a { display: inline-block; min-height: 2.75rem; padding: 0.55rem 0; font-weight: 600; }
+
+/* Service texts */
+.texts-page h2:first-child { margin-top: 0; }
+.texts { list-style: none; padding: 0; margin: 0 0 2rem; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.75rem; max-width: 48rem; }
+.texts .cal-link { height: 100%; align-items: flex-start; }
+.texts .cal-icon { margin-top: 0.2rem; }
+.texts .cal-sub { display: block; }
+.text-status { display: block; margin-top: 0.35rem; font-size: 0.9rem; font-weight: 600; color: var(--brick); }
+.texts .is-missing .text-status { color: var(--muted); font-weight: 400; }
+a.cal-link:hover .text-status { color: #fff; }
+.texts-foot { max-width: 48rem; }
+@media (max-width: 600px) { .texts { grid-template-columns: 1fr; } }
+@media (max-width: 600px) {
+  .saint .patron-icon { float: none; width: 11rem; margin: 0 auto 1.5rem; text-align: center; }
+}
