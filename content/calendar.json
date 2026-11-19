@@ -1,7 +1,7 @@
 {
   "note": "Add one line per month: \"YYYY-MM\": link to that month's PDF. Put new PDFs in static/calendar/ and link them as /static/calendar/<file>.pdf",
   "months": {
-    "2026-11": "https://www.stelizabethmartyr.org/s/November2026-3.pdf",
-    "2026-12": "https://www.stelizabethmartyr.org/s/Dec-Calendar.pdf"
+    "2026-11": "/static/calendar/2026-11.pdf",
+    "2026-12": "/static/calendar/2026-12.pdf"
   }
 }
