@@ -435,3 +435,11 @@ a.cal-link:hover .text-status { color: #fff; }
 @media (max-width: 600px) {
   .saint .patron-icon { float: none; width: 11rem; margin: 0 auto 1.5rem; text-align: center; }
 }
+
+/* Contact page message form (reuses .pledge-form styles) */
+.message-form { margin-top: 0.5rem; margin-bottom: 2.5rem; }
+.message-form h2 { margin-top: 0; }
+.message-form textarea { font-size: 1rem; min-height: 9rem; resize: vertical; }
+.message-form .hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+.message-form .form-status { font-weight: 600; color: var(--glass, #1e4f8f); margin: 0.25rem 0 0.75rem; }
+.message-form .form-status:empty { display: none; }

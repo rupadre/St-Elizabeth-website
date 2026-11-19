@@ -15,6 +15,19 @@
         <a class="button quiet" href="{{ site.sms_link }}">Send a text</a>
       </div>
       <p>Or email <a href="mailto:{{ site.email }}">{{ site.email }}</a>.</p>
+      <form class="pledge-form message-form" id="message-form" action="https://api.web3forms.com/submit" method="post" data-key="{{ site.contact_form_key }}" data-email="{{ site.email }}" novalidate>
+        <h2 id="message">Send a message</h2>
+        <p class="form-hint">Write to Fr. Arkady right here, and he will reply to you by email.</p>
+        <div class="field"><label for="msg-name">Your name</label><input id="msg-name" name="name" type="text" autocomplete="name" required></div>
+        <div class="field"><label for="msg-email">Your email</label><input id="msg-email" name="email" type="email" autocomplete="email" required></div>
+        <div class="field"><label for="msg-phone">Phone <span class="optional">(optional)</span></label><input id="msg-phone" name="phone" type="tel" autocomplete="tel"></div>
+        <div class="field"><label for="msg-text">Message</label><textarea id="msg-text" name="message" rows="6" required></textarea></div>
+        <div class="hp" aria-hidden="true"><label for="msg-botcheck">Leave this empty</label><input id="msg-botcheck" name="botcheck" type="text" tabindex="-1" autocomplete="off"></div>
+        <p class="form-error" id="msg-error" role="alert"></p>
+        <button class="button" type="submit">Send message</button>
+        <p class="form-status" id="msg-status" role="status"></p>
+        <p class="form-hint">Your message goes only to the parish. We don't share your details with anyone.</p>
+      </form>
       <h2>Address</h2>
       <address class="address">{{ site.address_line }}<br>{{ site.city_line }}</address>
       <p><a href="{{ site.maps_link }}">Open in Google Maps</a></p>
@@ -26,4 +39,5 @@
     <figure><img src="{{ static }}img/{{ page.image }}.jpg" alt="{{ page.image_alt }}"><figcaption class="caption">Our church on East Broadway in Walbridge's Moline neighborhood.</figcaption></figure>
   </div>
 </div>
+<script src="{{ static }}js/message.js" defer></script>
 {% endblock %}
