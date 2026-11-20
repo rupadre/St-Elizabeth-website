@@ -8,7 +8,7 @@ summary: A young mission with a long memory, serving Walbridge and the Toledo ar
 
 ## Our pastor
 
-**Fr. Arkady (Migunov)** was born in 1973 in Tver, Russia. He earned a degree in mechanical engineering in 1996 and a master's degree from the Moscow seminary at the Trinity-St. Sergius Lavra. He was tonsured a monk in 1999 and ordained to the priesthood soon after.
+**Rev. Arkady (Migunov)** was born in 1973 in Tver, Russia. He earned a degree in mechanical engineering in 1996 and a master's degree from the Moscow seminary at the Trinity-St. Sergius Lavra. He was tonsured a monk in 1999 and ordained to the priesthood soon after.
 
 In 2006 Fr. Arkady came to the United States as a missionary, and for more than 16 years served missions in Florida, especially Annunciation Mission in Jacksonville. In September 2023 Archbishop Alexander assigned him to lead our parish.
 
